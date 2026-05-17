@@ -905,17 +905,23 @@
       const screenWidth =
         window.innerWidth - 40;
 
+      const screenHeight =
+        window.innerHeight - 40;
+
+      const scaleX =
+        screenWidth / 794;
+
+      const scaleY =
+        screenHeight / 1123;
+
       const scale =
-        Math.min(screenWidth / 1200, 1);
+        Math.min(scaleX, scaleY, 1);
 
       page.style.transform =
         `scale(${scale})`;
 
-      const actualHeight =
-        page.offsetHeight * scale;
-
       wrapper.style.height =
-        `${actualHeight + 40}px`;
+        `${1123 * scale + 40}px`;
     }
 
     window.addEventListener(
