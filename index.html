@@ -7,7 +7,7 @@
 
   <meta
     name="viewport"
-    content="width=device-width, initial-scale=1.0"
+    content="width=794"
   />
 
   <title>Đào Tâm</title>
@@ -42,7 +42,10 @@
       box-sizing: border-box;
     }
 
-    html,
+    html {
+      -webkit-text-size-adjust: none;
+    }
+
     body {
       width: 100%;
       min-height: 100%;
@@ -645,19 +648,25 @@
         document.querySelector(".page-wrapper");
 
       const screenWidth =
-        window.innerWidth - 48;
+        window.innerWidth - 40;
+
+      const screenHeight =
+        window.innerHeight - 40;
+
+      const scaleX =
+        screenWidth / 794;
+
+      const scaleY =
+        screenHeight / 1123;
 
       const scale =
-        Math.min(screenWidth / 794, 1);
+        Math.min(scaleX, scaleY, 1);
 
       page.style.transform =
         `scale(${scale})`;
 
-      const scaledHeight =
-        1123 * scale;
-
       wrapper.style.height =
-        `${scaledHeight + 60}px`;
+        `${1123 * scale + 40}px`;
     }
 
     window.addEventListener(
