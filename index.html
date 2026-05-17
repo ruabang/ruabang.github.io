@@ -10,7 +10,7 @@
     content="width=794"
   />
 
-  <title>Đào Tâm</title>
+  <title>Nhu-Ngoc Dao's personal page</title>
 
   <!-- Google Font -->
 
@@ -61,6 +61,10 @@
       overflow-y: auto;
     }
 
+    a {
+      color: #9c9c9c;
+    }
+
     /* =======================================================
        FIXED A4 LAYOUT
     ======================================================= */
@@ -74,14 +78,12 @@
       justify-content: center;
       align-items: flex-start;
 
-      padding: 24px;
-
       overflow: auto;
     }
 
     .a4-page {
 
-      width: 794px;
+      width: 1200px;
       min-height: 1123px;
 
       background: white;
@@ -111,6 +113,8 @@
       padding-top: 20px;
       padding-bottom: 20px;
 
+      background:#5f656d;
+
       text-align: center;
     }
 
@@ -121,7 +125,9 @@
 
       letter-spacing: -1.5px;
 
-      color: #111827;
+      color: #ffffff;
+
+      margin-bottom: 5px;
 
     }
 
@@ -129,9 +135,10 @@
 
       font-size: 14px;
 
-      color: #6b7280;
+      color: #d1d1d1;
 
       font-weight: 400;
+
     }
 
     /* SECTION */
@@ -162,7 +169,7 @@
 
       font-size: 16px;
 
-      line-height: 1.95;
+      line-height: 1.7;
 
       color: #374151;
 
@@ -171,78 +178,92 @@
       margin-bottom: 10px;
     }
 
-    /* EXPERIENCE */
+    /* EXPERIENCE TABLE STYLE */
 
-    .project-list {
-
+    .experience-list {
       display: flex;
       flex-direction: column;
-
-      gap: 26px;
+      gap: 0px;
     }
 
-    .project-card {
+    .experience-item {
 
-      border: 1px solid #e5e7eb;
+      display: grid;
 
-      border-radius: 20px;
+      grid-template-columns: 155px 1fr;
 
-      padding: 30px;
+      gap: 5px;
 
-      background: #fafafa;
+      padding: 0 0;
 
-      transition: 0.25s ease;
+      border-bottom: 1px solid #e5e7eb;
     }
 
-    .project-card:hover {
+    .experience-time {
 
-      transform: translateY(-3px);
+      font-style: italic;
 
-      border-color: #d1d5db;
-    }
+      color: #6b7280;
 
-    .project-card h3 {
-
-      font-size: 24px;
-
-      color: #111827;
-
-      margin-bottom: 14px;
-
-      letter-spacing: -0.3px;
-    }
-
-    .project-card p {
+      text-align: left;
 
       font-size: 16px;
 
-      line-height: 1.85;
+      padding-top: 4px;
+    }
+
+    .experience-content p {
+
+      font-size: 16px;
+
+      line-height: 1.7;
 
       color: #4b5563;
     }
 
-    .project-tags {
+    /* PROJECT TABLE STYLE */
 
+    .project-list {
       display: flex;
-      flex-wrap: wrap;
-
-      gap: 10px;
-
-      margin-top: 20px;
+      flex-direction: column;
+      gap: 0px;
     }
 
-    .tag {
+    .project-item {
 
-      padding: 7px 14px;
+      display: grid;
 
-      border-radius: 999px;
+      grid-template-columns: 1fr 155px;
 
-      background: #e5e7eb;
+      gap: 5px;
 
-      color: #374151;
+      padding: 0 0;
 
-      font-size: 14px;
+      border-bottom: 1px solid #e5e7eb;
     }
+
+    .project-time {
+
+      font-style: italic;
+
+      color: #4b5563;
+
+      text-align: right;
+
+      font-size: 16px;
+
+      padding-top: 4px;
+    }
+
+    .project-content p {
+
+      font-size: 16px;
+
+      line-height: 1.7;
+
+      color: #6b7280;
+    }
+
 
     /* FOOTER */
 
@@ -356,7 +377,11 @@
     .chat-link i {
       font-size: 22px;
     }
-
+    
+    .kakao {
+      background: #FEE500;
+      color: #181600;
+    }
     .whatsapp {
       background: #25D366;
     }
@@ -390,8 +415,12 @@
         <div class="container">
 
           <h1>
-            Đào Tâm
+            Nhu-Ngoc Dao
           </h1>
+
+          <p>Associate Professor</p>
+            
+          <p>Department of Computer Science and Engineering, Sejong University</p>
 
         </div>
 
@@ -404,31 +433,16 @@
         <div class="container">
 
           <h2 class="section-title">
-            Tôi là ai?
+            Biography
           </h2>
 
           <p class="about-text">
 
-            I am passionate about building intelligent systems,
-            AI-native communication technologies,
-            and scalable digital platforms for future wireless
-            networks and intelligent applications.
-            My research interests include artificial intelligence,
-            semantic communication, edge intelligence,
-            UAV communications, and next-generation 6G systems.
+            Nhu-Ngoc Dao is an Associate Professor at the Department of Computer Science and Engineering, Sejong University, Seoul, South Korea. He received his M.S. and Ph.D. degrees in computer science at the School of Computer Science and Engineering, Chung-Ang University, Seoul, South Korea, in 2016 and 2019, respectively. He received the B.S. degree in electronics and telecommunications from the Posts and Telecommunications Institute of Technology, Hanoi, Viet Nam, in 2009. Prior to joining Sejong University, he was a Visiting Researcher with the University of Newcastle, Callaghan, NSW, Australia, in 2019 and a Postdoc Researcher with the Institute of Computer Science, University of Bern, Switzerland, from 2019 to 2020. He was a Visiting Professor at Chung-Ang University from 2023 to 2024. He received the <i>2025 Springer Nature Editorial Contribution Award</i>. He is currently an Editor of the <i>ICT Express</i>, <i>Scientific Reports</i>, and <i>PLOS ONE</i> journals. Dr. Dao is a Senior Member of IEEE and a Member of ACM. Contact him at nndao@sejong.ac.kr.
 
           </p>
 
-          <p class="about-text">
-
-            I enjoy combining academic research with practical
-            engineering to develop technologies that are both
-            theoretically meaningful and applicable to real-world
-            problems. I am also interested in interdisciplinary
-            innovation connecting communication systems,
-            machine intelligence, and human-centered computing.
-
-          </p>
+          <p class="about-text"><i>Research interests:</i> network softwarization, mobile cloudification, communication security, intelligent systems, and Internet of Things.</p>
 
         </div>
 
@@ -441,102 +455,183 @@
         <div class="container">
 
           <h2 class="section-title">
-            My Experience
+            Experience
+          </h2>
+
+          <div class="experience-list">
+
+            <!-- Experience 1 -->
+
+            <div class="experience-item">
+              <div class="experience-time">
+                03.2020 – Present
+              </div>
+              <div class="experience-content">
+                <p>
+                  Associate Professor, Department of Computer Science and Engineering, Sejong University, South Korea.
+                </p>
+              </div>
+            </div>
+
+            <!-- Experience 2 -->
+
+            <div class="experience-item">
+              <div class="experience-time">
+                03.2020 – Present
+              </div>
+              <div class="experience-content">
+                <p>
+                  Director, <a href="https://pshhlab.github.io">Privacy-Sensitive Heterogeneous Hypercomputing (PSHH) lab,</a> Sejong University, South Korea.
+                </p>
+              </div>
+            </div>
+
+            <!-- Experience 3 -->
+
+            <div class="experience-item">
+              <div class="experience-time">
+                09.2023 - 02.2024
+              </div>
+              <div class="experience-content">
+                <p>
+                  Visiting Professor, Department of Computer Science and Engineering, Chung-Ang University, South Korea.
+                </p>
+              </div>
+            </div>
+
+            <!-- Experience 4 -->
+
+            <div class="experience-item">
+              <div class="experience-time">
+                09.2019 - 02.2020
+              </div>
+              <div class="experience-content">
+                <p>
+                  Postdoc, Institute of Computer Science, University of Bern, Switzerland.<br>(Advisor: <a href="https://www.cds.unibe.ch/about_us/team/current/prof_dr_braun_torsten">Prof. Torsten Braun</a>)
+                </p>
+              </div>
+            </div>
+
+            <!-- Experience 5 -->
+
+            <div class="experience-item">
+              <div class="experience-time">
+                07.2019 - 08.2019
+              </div>
+              <div class="experience-content">
+                <p>
+                  Visiting Researcher, CDSC Center, University of Newcastle, Australia.
+                </p>
+              </div>
+            </div>
+ 
+          <!-- Experience 6 -->
+
+          <div class="experience-item">
+            <div class="experience-time">
+              03.2014 - 08.2019
+            </div>
+            <div class="experience-content">
+              <p>
+                MS/PhD student in Computer Science, Department of Computer Science and Engineering, Chung-Ang University, South Korea.<br>(Advisor: <a href="http://cau.ac.kr/~srcho">Prof. Sungrae Cho</a>)
+              </p>
+            </div>
+          </div>
+
+          <!-- Experience 7 -->
+
+          <div class="experience-item">
+            <div class="experience-time">
+              01.2009 - 02.2014
+            </div>
+            <div class="experience-content">
+              <p>
+                Engineer, Technology Department, Global Telecommunication Corporation (GTEL), Vietnam.
+              </p>
+            </div>
+          </div>
+
+          <!-- Experience 8 -->
+
+          <div class="experience-item">
+            <div class="experience-time">
+              09.2004 - 12.2008
+            </div>
+            <div class="experience-content">
+              <p>
+                BS student in Electronics &amp; Telecoms, Posts and Telecommunications Institute of Technology, Vietnam.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      </section>
+
+      <!-- PROJECT -->
+
+      <section>
+
+        <div class="container">
+
+          <h2 class="section-title">
+            Project
           </h2>
 
           <div class="project-list">
 
             <!-- Project 1 -->
-
-            <div class="project-card">
-
-              <h3>
-                AI-Powered UAV Communication Framework
-              </h3>
-
-              <p>
-
-                Developed an intelligent communication framework
-                for UAV networks integrating machine learning,
-                adaptive transmission,
-                and semantic-aware communication mechanisms
-                for next-generation wireless systems.
-
-              </p>
-
-              <div class="project-tags">
-
-                <div class="tag">AI</div>
-
-                <div class="tag">UAV</div>
-
-                <div class="tag">6G</div>
-
+            <div class="project-item">
+              <div class="project-content">
+                <p>
+                  Development of end-to-end 8 ultra-communication and networking technologies<br><i>Sponsor:</i> IITP (South Korea)
+                </p>
               </div>
-
+              <div class="project-time">
+                07.2022 – 12.2029
+              </div>
             </div>
 
             <!-- Project 2 -->
-
-            <div class="project-card">
-
-              <h3>
-                Token-Based Semantic Communication System
-              </h3>
-
-              <p>
-
-                Designed a token-centric communication architecture
-                supporting multimodal AI-native wireless services,
-                intelligent edge computing,
-                and semantic-aware transmission for future networks.
-
-              </p>
-
-              <div class="project-tags">
-
-                <div class="tag">Semantic Communication</div>
-
-                <div class="tag">LLM</div>
-
-                <div class="tag">Edge AI</div>
-
+            <div class="project-item">
+              <div class="project-content">
+                <p>
+                  Assisting natural beekeeping in rural and remote areas using LoRa-based IoT and drones<br><i>Sponsor:</i> ISIF Asia (APNIC)
+                </p>
               </div>
-
+              <div class="project-time">
+                01.2023 – 06.2024
+              </div>
             </div>
 
             <!-- Project 3 -->
-
-            <div class="project-card">
-
-              <h3>
-                Intelligent mmWave Beam Prediction Platform
-              </h3>
-
-              <p>
-
-                Implemented a deep learning-based beam prediction
-                platform for high-frequency UAV communication
-                in dynamic wireless environments
-                using trajectory-aware wireless intelligence.
-
-              </p>
-
-              <div class="project-tags">
-
-                <div class="tag">mmWave</div>
-
-                <div class="tag">Deep Learning</div>
-
-                <div class="tag">Wireless</div>
-
+            <div class="project-item">
+              <div class="project-content">
+                <p>
+                  Intelligent adaptive bitrate video streaming empowered by cross-tier user-centric edge caching systems<br><i>Sponsor:</i> NRF (South Korea)
+                </p>
               </div>
-
+              <div class="project-time">
+                03.2021 – 02.2024
+              </div>
             </div>
 
-          </div>
+            <!-- Project 4 -->
+            <div class="project-item">
+              <div class="project-content">
+                <p>
+                  Hit ratio and content quality tradeoff for adaptive bitrate streaming in edge caching systems<br><i>Sponsor:</i> IACF (Sejong University)
+                </p>
+              </div>
+              <div class="project-time">
+                03.2020 – 02.2021
+              </div>
+            </div>
 
         </div>
+
+      </div>
 
       </section>
 
@@ -557,6 +652,16 @@
   <div class="floating-chat">
 
     <div class="chat-options" id="chatOptions">
+
+    <!-- KakaoTalk -->
+
+    <a
+      href="https://open.kakao.com/o/yourlink"
+      target="_blank"
+      class="chat-link kakao"
+    >
+      <i class="fa-solid fa-comment"></i>
+    </a>
 
       <!-- WhatsApp -->
 
