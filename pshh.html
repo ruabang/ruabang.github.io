@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=794"
+  />
+
+  <title>PSHH Laboratory, Sejong University</title>
+
+  <!-- Google Font -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Font Awesome -->
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      -webkit-text-size-adjust: none;
+    }
+
+    body {
+      width: 100%;
+      min-height: 100%;
+    }
+
+    body {
+
+      background: #d1d5db;
+
+      font-family: "Inter", sans-serif;
+
+      overflow-x: auto;
+      overflow-y: auto;
+    }
+
+    a {
+      color: #9c9c9c;
+    }
+
+    /* =======================================================
+       FIXED A4 LAYOUT
+    ======================================================= */
+
+    .page-wrapper {
+
+      width: 100vw;
+      min-height: 100vh;
+
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+
+      overflow: auto;
+    }
+
+    .a4-page {
+
+      width: 1200px;
+      min-height: 1123px;
+
+      background: white;
+
+      transform-origin: top center;
+
+      box-shadow:
+        0 10px 35px rgba(0,0,0,0.15);
+
+      position: relative;
+    }
+
+    /* =======================================================
+       CONTENT
+    ======================================================= */
+
+    .container {
+      width: 100%;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    /* HERO */
+
+    .hero {
+
+      padding-top: 20px;
+      padding-bottom: 20px;
+
+      background:#5f656d;
+
+      text-align: center;
+    }
+
+    .hero h1 {
+
+      font-size: 36px;
+      font-weight: 700;
+
+      letter-spacing: -1.5px;
+
+      color: #ffffff;
+
+      margin-bottom: 5px;
+
+    }
+
+    .hero p {
+
+      font-size: 14px;
+
+      color: #d1d1d1;
+
+      font-weight: 400;
+
+    }
+
+    /* SECTION */
+
+    section {
+
+      padding-top: 30px;
+      padding-bottom: 30px;
+
+      border-top: 1px solid #e5e7eb;
+    }
+
+    .section-title {
+
+      font-size: 25px;
+      font-weight: 700;
+
+      color: #111827;
+
+      margin-bottom: 15px;
+
+      letter-spacing: -0.5px;
+    }
+
+    /* ABOUT */
+
+    .about-text {
+
+      font-size: 16px;
+
+      line-height: 1.7;
+
+      color: #374151;
+
+      text-align: justify;
+
+      margin-bottom: 10px;
+    }
+
+    /* EXPERIENCE TABLE STYLE */
+
+    .experience-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0px;
+    }
+
+    .experience-item {
+
+      display: grid;
+
+      grid-template-columns: 155px 1fr;
+
+      gap: 5px;
+
+      padding: 0 0;
+
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    .experience-time {
+
+      font-style: italic;
+
+      color: #6b7280;
+
+      text-align: left;
+
+      font-size: 16px;
+
+      padding-top: 4px;
+    }
+
+    .experience-content p {
+
+      font-size: 16px;
+
+      line-height: 1.7;
+
+      color: #4b5563;
+    }
+
+    /* PROJECT TABLE STYLE */
+
+    .project-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0px;
+    }
+
+    .project-item {
+
+      display: grid;
+
+      grid-template-columns: 1fr 155px;
+
+      gap: 5px;
+
+      padding: 0 0;
+
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    .project-time {
+
+      font-style: italic;
+
+      color: #4b5563;
+
+      text-align: right;
+
+      font-size: 16px;
+
+      padding-top: 4px;
+    }
+
+    .project-content p {
+
+      font-size: 16px;
+
+      line-height: 1.7;
+
+      color: #6b7280;
+    }
+
+    /* STUDENT */
+
+    .student-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0px;
+      list-style-type: decimal;
+      margin: 0;
+      list-style-position: inside;
+    }
+
+    .student-item {
+
+      line-height: 1.7;
+      color: #4b5563;
+      font-size: 16px;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+
+      padding-top: 20px;
+      padding-bottom: 20px;
+
+      border-top: 1px solid #e5e7eb;
+
+      text-align: center;
+
+      font-size: 13px;
+
+      color: #6b7280;
+    }
+
+    /* =======================================================
+       FLOATING CHAT
+    ======================================================= */
+
+    .floating-chat {
+
+      position: fixed;
+
+      right: 24px;
+      bottom: 24px;
+
+      z-index: 9999;
+    }
+
+    .main-button {
+
+      width: 62px;
+      height: 62px;
+
+      border: none;
+      border-radius: 50%;
+
+      cursor: pointer;
+
+      background: #111827;
+
+      color: white;
+
+      font-size: 24px;
+
+      box-shadow:
+        0 10px 25px rgba(0,0,0,0.18);
+
+      transition: 0.25s;
+    }
+
+    .main-button:hover {
+      transform: scale(1.06);
+    }
+
+    .chat-options {
+
+      position: absolute;
+
+      right: 0;
+      bottom: 76px;
+
+      display: flex;
+      flex-direction: column;
+
+      gap: 14px;
+
+      opacity: 0;
+      visibility: hidden;
+
+      transform: translateY(10px);
+
+      transition: 0.25s;
+    }
+
+    .chat-options.show {
+
+      opacity: 1;
+      visibility: visible;
+
+      transform: translateY(0);
+    }
+
+    .chat-link {
+
+      width: 56px;
+      height: 56px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      border-radius: 50%;
+
+      color: white;
+
+      text-decoration: none;
+
+      box-shadow:
+        0 8px 20px rgba(0,0,0,0.15);
+
+      transition: 0.2s;
+    }
+
+    .chat-link:hover {
+      transform: scale(1.08);
+    }
+
+    .chat-link i {
+      font-size: 22px;
+    }
+    
+    .kakao {
+      background: #FEE500;
+      color: #181600;
+    }
+    .whatsapp {
+      background: #25D366;
+    }
+
+    .telegram {
+      background: #229ED9;
+    }
+
+    .zalo {
+      background: #0068FF;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- =======================================================
+       PAGE WRAPPER
+  ======================================================== -->
+
+  <div class="page-wrapper">
+
+    <div class="a4-page">
+
+      <!-- HERO -->
+
+      <div class="hero">
+
+        <div class="container">
+
+          <img src="logo.png" width="293" height="86">
+
+          <p><br>Department of Computer Science and Engineering, Sejong University, Seoul</p>
+
+        </div>
+
+      </div>
+
+      <!-- about -->
+
+      <section>
+
+        <div class="container">
+
+          <h2 class="section-title">
+            Introduction
+          </h2>
+
+          <p class="about-text">
+
+            The Privacy-Sensitive Heterogeneous Hypercomputing (PSHH) Lab, directed by <a href="https://nndao.github.io">Dr. Nhu-Ngoc Dao</a>, is part of the Department of Computer Science and Engineering at Sejong University in Seoul. Our research explores fundamental challenges at the intersection of programmable networking, mobile computing, and wireless communications, with the goal of enabling intelligent, scalable, and privacy-aware networked systems for the 6G era and beyond. We warmly welcome students from both Korea and around the world who are interested in joining our research group. Please feel free to contact <a href="https://nndao.github.io">Ngoc</a> for further information.
+
+          </p>
+
+          <p class="about-text"><font color="slategray" size="3">Feature article: "Toward privacy-sensitive heterogeneous hypercomputing", <i>IEEE Communications Magazine</i>, vol. 62, no. 4, pp. 24-30, 2024. [<a href="https://doi.org/10.1109/MCOM.001.2300145">IEEE</a>]|[<a href="/pshhcommag.pdf">PDF</a>]</font></p>
+
+        </div>
+
+      </section>
+
+      <!-- experience -->
+
+      <section>
+
+        <div class="container">
+
+          <h2 class="section-title">
+            Experience
+          </h2>
+
+          <div class="experience-list">
+
+            <!-- Experience 1 -->
+
+            <div class="experience-item">
+              <div class="experience-time">
+                03.2020 – Present
+              </div>
+              <div class="experience-content">
+                <p>
+                  Associate Professor, Department of Computer Science and Engineering, Sejong University, South Korea.
+                </p>
+              </div>
+            </div>
+
+            <!-- Experience 2 -->
+
+            <div class="experience-item">
+              <div class="experience-time">
+                03.2020 – Present
+              </div>
+              <div class="experience-content">
+                <p>
+                  Director, <a href="https://pshhlab.github.io">Privacy-Sensitive Heterogeneous Hypercomputing (PSHH) lab,</a> Sejong University, South Korea.
+                </p>
+              </div>
+            </div>
+
+            <!-- Experience 3 -->
+
+            <div class="experience-item">
+              <div class="experience-time">
+                09.2023 - 02.2024
+              </div>
+              <div class="experience-content">
+                <p>
+                  Visiting Professor, Department of Computer Science and Engineering, Chung-Ang University, South Korea.
+                </p>
+              </div>
+            </div>
+
+            <!-- Experience 4 -->
+
+            <div class="experience-item">
+              <div class="experience-time">
+                09.2019 - 02.2020
+              </div>
+              <div class="experience-content">
+                <p>
+                  Postdoc, Institute of Computer Science, University of Bern, Switzerland.<br>(Advisor: <a href="https://www.cds.unibe.ch/about_us/team/current/prof_dr_braun_torsten">Prof. Torsten Braun</a>)
+                </p>
+              </div>
+            </div>
+
+            <!-- Experience 5 -->
+
+            <div class="experience-item">
+              <div class="experience-time">
+                07.2019 - 08.2019
+              </div>
+              <div class="experience-content">
+                <p>
+                  Visiting Researcher, CDSC Center, University of Newcastle, Australia.
+                </p>
+              </div>
+            </div>
+ 
+          <!-- Experience 6 -->
+
+          <div class="experience-item">
+            <div class="experience-time">
+              03.2014 - 08.2019
+            </div>
+            <div class="experience-content">
+              <p>
+                MS/PhD student in Computer Science, Department of Computer Science and Engineering, Chung-Ang University, South Korea.<br>(Advisor: <a href="http://cau.ac.kr/~srcho">Prof. Sungrae Cho</a>)
+              </p>
+            </div>
+          </div>
+
+          <!-- Experience 7 -->
+
+          <div class="experience-item">
+            <div class="experience-time">
+              01.2009 - 02.2014
+            </div>
+            <div class="experience-content">
+              <p>
+                Engineer, Technology Department, Global Telecommunication Corporation (GTEL), Vietnam.
+              </p>
+            </div>
+          </div>
+
+          <!-- Experience 8 -->
+
+          <div class="experience-item">
+            <div class="experience-time">
+              09.2004 - 12.2008
+            </div>
+            <div class="experience-content">
+              <p>
+                BS student in Electronics &amp; Telecoms, Posts and Telecommunications Institute of Technology, Vietnam.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      </section>
+
+      <!-- project -->
+
+      <section>
+
+        <div class="container">
+
+          <h2 class="section-title">
+            Projects
+          </h2>
+
+          <div class="project-list">
+
+            <!-- Project 1 -->
+            <div class="project-item">
+              <div class="project-content">
+                <p>
+                  Development of end-to-end 8 ultra-communication and networking technologies<br><i>Sponsor:</i> IITP (South Korea)
+                </p>
+              </div>
+              <div class="project-time">
+                07.2022 – 12.2029
+              </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-item">
+              <div class="project-content">
+                <p>
+                  Assisting natural beekeeping in rural and remote areas using LoRa-based IoT and drones<br><i>Sponsor:</i> ISIF Asia (APNIC)
+                </p>
+              </div>
+              <div class="project-time">
+                01.2023 – 06.2024
+              </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-item">
+              <div class="project-content">
+                <p>
+                  Intelligent adaptive bitrate video streaming empowered by cross-tier user-centric edge caching systems<br><i>Sponsor:</i> NRF (South Korea)
+                </p>
+              </div>
+              <div class="project-time">
+                03.2021 – 02.2024
+              </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project-item">
+              <div class="project-content">
+                <p>
+                  Hit ratio and content quality tradeoff for adaptive bitrate streaming in edge caching systems<br><i>Sponsor:</i> IACF (Sejong University)
+                </p>
+              </div>
+              <div class="project-time">
+                03.2020 – 02.2021
+              </div>
+            </div>
+
+        </div>
+
+      </div>
+
+      </section>
+
+      <!-- Supervision -->
+
+      <section>
+
+        <div class="container">
+
+          <h2 class="section-title">
+            Supervision
+          </h2>
+
+          <ul style="list-style-type:square" class="student-list">
+
+            <li class="student-item">
+              Anh Tuan Nguyen (Vietnam), PhD student from 09.2024
+            </li>
+            <li class="student-item">
+              Duc Quyen Mac (Vietnam), MS student from 03.2026
+            </li>
+            <li class="student-item">
+              Caleb Amanuel Wossen (USA), MS student from 09.2025
+            </li>
+            <li class="student-item">
+              Md Rakibul Islam (Bangladesh), MS student from 03.2025
+            </li>
+            <li class="student-item">
+              Islam Md Mahrab (Bangladesh), MS student from 09.2024
+            </li>
+            <li class="student-item">
+              Minh Phuoc Nguyen (Vietnam), MS student from 09.2024
+            </li>
+            <li class="student-item">
+              Samuel Harry Gardner (UK), MS student from 09.2024
+            </li>
+            <li class="student-item">
+              Fayshal Ahmed (Bangladesh), MS student from 03.2023 - 02.2025</i>
+            </li>
+            <li class="student-item">
+              Teshager Hailemariam Moges (Ethiopia), MS student from 09.2022 - 08.2024</i>
+            </li>
+            <li class="student-item">
+              The-Vinh Nguyen (Vietnam), MS student from 09.2021 - 08.2023</i>
+            </li>
+
+          </ul>
+
+
+      </div>
+
+      </section>
+
+      <!-- Teaching -->
+
+      <section>
+
+        <div class="container">
+
+          <h2 class="section-title">
+            Teaching Courses
+          </h2>
+
+          <div class="experience-list">
+
+            <!-- teaching 1 -->
+
+            <div class="experience-item">
+              <div class="experience-time">
+                Graduate
+              </div>
+              <div class="experience-content">
+                <p>
+                  Mobile networks, Advanced computer networks, Advanced broadband networks, Advanced Internet applications, Special topics on IoT technologies, Converged IP networks, Special topics on Internet security
+                </p>
+              </div>
+            </div>
+
+            <!-- teaching 2 -->
+
+            <div class="experience-item">
+              <div class="experience-time">
+                Undergraduate
+              </div>
+              <div class="experience-content">
+                <p>
+                  Wireless communications, Computer networks, Digital systems, Intelligent edge systems, Basic designs
+                </p>
+              </div>
+            </div>
+
+        </div>
+
+      </div>
+
+      </section>
+
+      <!-- keynote -->
+
+      <section>
+
+        <div class="container">
+
+          <h2 class="section-title">
+            Invited Talks/Keynotes
+          </h2>
+
+          <div class="project-list">
+
+            <!-- keynote 1 -->
+            <div class="project-item">
+              <div class="project-content">
+                <p>
+                  Intelligent networking infrastructure for digital twins towards urban intelligence<br><i>National Institute for Digital Technologies and Digital Transformation, Hanoi, Vietnam</i>
+                </p>
+              </div>
+              <div class="project-time">
+                Nov. 18, 2025
+              </div>
+            </div>
+
+            <!-- keynote 2 -->
+            <div class="project-item">
+              <div class="project-content">
+                <p>
+                  Artificial intelligence of things: State-of-the-art and applications<br><i>Kongju National University, Cheonan, South Korea</i>
+                </p>
+              </div>
+              <div class="project-time">
+                Sep. 25, 2024
+              </div>
+            </div>
+
+            <!-- keynote 3 -->
+            <div class="project-item">
+              <div class="project-content">
+                <p>
+                  Aerial communication and computing in drone swarms<br><i>UAS center, University of Southern Denmark, Odense, Denmark</i>
+                </p>
+              </div>
+              <div class="project-time">
+                Aug. 09, 2024
+              </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project-item">
+              <div class="project-content">
+                <p>
+                  Multi-antenna transmission and beam management in mobile networks<br><i>Big Data Innovation Talent Training Center, Chung-Ang University, Seoul, South Korea</i>
+                </p>
+              </div>
+              <div class="project-time">
+                Feb. 03, 2023
+              </div>
+            </div>
+
+        </div>
+
+      </div>
+
+      </section>
+
+
+
+      
+
+      <!-- FOOTER -->
+
+      <footer>
+        © 2026 Nhu-Ngoc Dao
+      </footer>
+
+    </div>
+
+  </div>
+
+  <!-- =======================================================
+       FLOATING CHAT
+  ======================================================== -->
+
+  <div class="floating-chat">
+
+    <div class="chat-options" id="chatOptions">
+
+    <!-- KakaoTalk -->
+
+    <a
+      href="https://open.kakao.com/o/yourlink"
+      target="_blank"
+      class="chat-link kakao"
+    >
+      <i class="fa-solid fa-comment"></i>
+    </a>
+
+      <!-- WhatsApp -->
+
+      <a
+        href="https://wa.me/84901234567"
+        target="_blank"
+        class="chat-link whatsapp"
+      >
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+
+      <!-- Telegram -->
+
+      <a
+        href="https://t.me/your_username"
+        target="_blank"
+        class="chat-link telegram"
+      >
+        <i class="fa-brands fa-telegram"></i>
+      </a>
+
+      <!-- Zalo -->
+
+      <a
+        href="https://zalo.me/84901234567"
+        target="_blank"
+        class="chat-link zalo"
+      >
+        <i class="fa-solid fa-comment"></i>
+      </a>
+
+    </div>
+
+    <!-- Main Button -->
+
+    <button class="main-button" id="mainButton">
+
+      <i class="fa-solid fa-comments"></i>
+
+    </button>
+
+  </div>
+
+  <!-- =======================================================
+       SCRIPT
+  ======================================================== -->
+
+  <script>
+
+    /* =======================================================
+       FLOATING CHAT
+    ======================================================= */
+
+    const mainButton =
+      document.getElementById("mainButton");
+
+    const chatOptions =
+      document.getElementById("chatOptions");
+
+    mainButton.addEventListener("click", () => {
+
+      chatOptions.classList.toggle("show");
+
+    });
+
+    document.addEventListener("click", (event) => {
+
+      const isInside =
+        event.target.closest(".floating-chat");
+
+      if (!isInside) {
+
+        chatOptions.classList.remove("show");
+
+      }
+
+    });
+
+    /* =======================================================
+       FIXED A4 AUTO SCALE
+    ======================================================= */
+
+    function scaleA4Page() {
+
+      const page =
+        document.querySelector(".a4-page");
+
+      const wrapper =
+        document.querySelector(".page-wrapper");
+
+      const screenWidth =
+        window.innerWidth - 40;
+
+      const screenHeight =
+        window.innerHeight - 40;
+
+      const scaleX =
+        screenWidth / 794;
+
+      const scaleY =
+        screenHeight / 1123;
+
+      const scale =
+        Math.min(scaleX, scaleY, 1);
+
+      page.style.transform =
+        `scale(${scale})`;
+
+      wrapper.style.height =
+        `${1123 * scale + 40}px`;
+    }
+
+    window.addEventListener(
+      "resize",
+      scaleA4Page
+    );
+
+    scaleA4Page();
+
+  </script>
+
+</body>
+
+</html>
