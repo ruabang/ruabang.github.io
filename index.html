@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>Đào Tâm</title>
+
+  <!-- Google Font -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Font Awesome -->
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      width: 100%;
+      min-height: 100%;
+    }
+
+    body {
+
+      background: #d1d5db;
+
+      font-family: "Inter", sans-serif;
+
+      overflow-x: auto;
+      overflow-y: auto;
+    }
+
+    /* =======================================================
+       FIXED A4 LAYOUT
+    ======================================================= */
+
+    .page-wrapper {
+
+      width: 100vw;
+      min-height: 100vh;
+
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+
+      padding: 24px;
+
+      overflow: auto;
+    }
+
+    .a4-page {
+
+      width: 794px;
+      min-height: 1123px;
+
+      background: white;
+
+      transform-origin: top center;
+
+      box-shadow:
+        0 10px 35px rgba(0,0,0,0.15);
+
+      position: relative;
+    }
+
+    /* =======================================================
+       CONTENT
+    ======================================================= */
+
+    .container {
+      width: 100%;
+      padding-left: 72px;
+      padding-right: 72px;
+    }
+
+    /* HERO */
+
+    .hero {
+
+      padding-top: 10px;
+      padding-bottom: 10px;
+
+      text-align: center;
+    }
+
+    .hero h1 {
+
+      font-size: 56px;
+      font-weight: 700;
+
+      letter-spacing: -1.5px;
+
+      color: #111827;
+
+      margin-bottom: 18px;
+    }
+
+    .hero p {
+
+      font-size: 21px;
+
+      color: #6b7280;
+
+      font-weight: 400;
+    }
+
+    /* SECTION */
+
+    section {
+
+      padding-top: 70px;
+      padding-bottom: 70px;
+
+      border-top: 1px solid #e5e7eb;
+    }
+
+    .section-title {
+
+      font-size: 34px;
+      font-weight: 700;
+
+      color: #111827;
+
+      margin-bottom: 34px;
+
+      letter-spacing: -0.5px;
+    }
+
+    /* ABOUT */
+
+    .about-text {
+
+      font-size: 18px;
+
+      line-height: 1.95;
+
+      color: #374151;
+
+      text-align: justify;
+
+      margin-bottom: 26px;
+    }
+
+    /* EXPERIENCE */
+
+    .project-list {
+
+      display: flex;
+      flex-direction: column;
+
+      gap: 26px;
+    }
+
+    .project-card {
+
+      border: 1px solid #e5e7eb;
+
+      border-radius: 20px;
+
+      padding: 30px;
+
+      background: #fafafa;
+
+      transition: 0.25s ease;
+    }
+
+    .project-card:hover {
+
+      transform: translateY(-3px);
+
+      border-color: #d1d5db;
+    }
+
+    .project-card h3 {
+
+      font-size: 24px;
+
+      color: #111827;
+
+      margin-bottom: 14px;
+
+      letter-spacing: -0.3px;
+    }
+
+    .project-card p {
+
+      font-size: 16px;
+
+      line-height: 1.85;
+
+      color: #4b5563;
+    }
+
+    .project-tags {
+
+      display: flex;
+      flex-wrap: wrap;
+
+      gap: 10px;
+
+      margin-top: 20px;
+    }
+
+    .tag {
+
+      padding: 7px 14px;
+
+      border-radius: 999px;
+
+      background: #e5e7eb;
+
+      color: #374151;
+
+      font-size: 14px;
+    }
+
+    /* FOOTER */
+
+    footer {
+
+      padding-top: 50px;
+      padding-bottom: 50px;
+
+      border-top: 1px solid #e5e7eb;
+
+      text-align: center;
+
+      font-size: 15px;
+
+      color: #6b7280;
+    }
+
+    /* =======================================================
+       FLOATING CHAT
+    ======================================================= */
+
+    .floating-chat {
+
+      position: fixed;
+
+      right: 24px;
+      bottom: 24px;
+
+      z-index: 9999;
+    }
+
+    .main-button {
+
+      width: 62px;
+      height: 62px;
+
+      border: none;
+      border-radius: 50%;
+
+      cursor: pointer;
+
+      background: #111827;
+
+      color: white;
+
+      font-size: 24px;
+
+      box-shadow:
+        0 10px 25px rgba(0,0,0,0.18);
+
+      transition: 0.25s;
+    }
+
+    .main-button:hover {
+      transform: scale(1.06);
+    }
+
+    .chat-options {
+
+      position: absolute;
+
+      right: 0;
+      bottom: 76px;
+
+      display: flex;
+      flex-direction: column;
+
+      gap: 14px;
+
+      opacity: 0;
+      visibility: hidden;
+
+      transform: translateY(10px);
+
+      transition: 0.25s;
+    }
+
+    .chat-options.show {
+
+      opacity: 1;
+      visibility: visible;
+
+      transform: translateY(0);
+    }
+
+    .chat-link {
+
+      width: 56px;
+      height: 56px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      border-radius: 50%;
+
+      color: white;
+
+      text-decoration: none;
+
+      box-shadow:
+        0 8px 20px rgba(0,0,0,0.15);
+
+      transition: 0.2s;
+    }
+
+    .chat-link:hover {
+      transform: scale(1.08);
+    }
+
+    .chat-link i {
+      font-size: 22px;
+    }
+
+    .whatsapp {
+      background: #25D366;
+    }
+
+    .telegram {
+      background: #229ED9;
+    }
+
+    .zalo {
+      background: #0068FF;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- =======================================================
+       PAGE WRAPPER
+  ======================================================== -->
+
+  <div class="page-wrapper">
+
+    <div class="a4-page">
+
+      <!-- HERO -->
+
+      <div class="hero">
+
+        <div class="container">
+
+          <h1>
+            Đào Tâm
+          </h1>
+
+        </div>
+
+      </div>
+
+      <!-- ABOUT -->
+
+      <section>
+
+        <div class="container">
+
+          <h2 class="section-title">
+            Tôi là ai?
+          </h2>
+
+          <p class="about-text">
+
+            I am passionate about building intelligent systems,
+            AI-native communication technologies,
+            and scalable digital platforms for future wireless
+            networks and intelligent applications.
+            My research interests include artificial intelligence,
+            semantic communication, edge intelligence,
+            UAV communications, and next-generation 6G systems.
+
+          </p>
+
+          <p class="about-text">
+
+            I enjoy combining academic research with practical
+            engineering to develop technologies that are both
+            theoretically meaningful and applicable to real-world
+            problems. I am also interested in interdisciplinary
+            innovation connecting communication systems,
+            machine intelligence, and human-centered computing.
+
+          </p>
+
+        </div>
+
+      </section>
+
+      <!-- EXPERIENCE -->
+
+      <section>
+
+        <div class="container">
+
+          <h2 class="section-title">
+            My Experience
+          </h2>
+
+          <div class="project-list">
+
+            <!-- Project 1 -->
+
+            <div class="project-card">
+
+              <h3>
+                AI-Powered UAV Communication Framework
+              </h3>
+
+              <p>
+
+                Developed an intelligent communication framework
+                for UAV networks integrating machine learning,
+                adaptive transmission,
+                and semantic-aware communication mechanisms
+                for next-generation wireless systems.
+
+              </p>
+
+              <div class="project-tags">
+
+                <div class="tag">AI</div>
+
+                <div class="tag">UAV</div>
+
+                <div class="tag">6G</div>
+
+              </div>
+
+            </div>
+
+            <!-- Project 2 -->
+
+            <div class="project-card">
+
+              <h3>
+                Token-Based Semantic Communication System
+              </h3>
+
+              <p>
+
+                Designed a token-centric communication architecture
+                supporting multimodal AI-native wireless services,
+                intelligent edge computing,
+                and semantic-aware transmission for future networks.
+
+              </p>
+
+              <div class="project-tags">
+
+                <div class="tag">Semantic Communication</div>
+
+                <div class="tag">LLM</div>
+
+                <div class="tag">Edge AI</div>
+
+              </div>
+
+            </div>
+
+            <!-- Project 3 -->
+
+            <div class="project-card">
+
+              <h3>
+                Intelligent mmWave Beam Prediction Platform
+              </h3>
+
+              <p>
+
+                Implemented a deep learning-based beam prediction
+                platform for high-frequency UAV communication
+                in dynamic wireless environments
+                using trajectory-aware wireless intelligence.
+
+              </p>
+
+              <div class="project-tags">
+
+                <div class="tag">mmWave</div>
+
+                <div class="tag">Deep Learning</div>
+
+                <div class="tag">Wireless</div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- FOOTER -->
+
+      <footer>
+        © 2026 Your Name
+      </footer>
+
+    </div>
+
+  </div>
+
+  <!-- =======================================================
+       FLOATING CHAT
+  ======================================================== -->
+
+  <div class="floating-chat">
+
+    <div class="chat-options" id="chatOptions">
+
+      <!-- WhatsApp -->
+
+      <a
+        href="https://wa.me/84901234567"
+        target="_blank"
+        class="chat-link whatsapp"
+      >
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+
+      <!-- Telegram -->
+
+      <a
+        href="https://t.me/your_username"
+        target="_blank"
+        class="chat-link telegram"
+      >
+        <i class="fa-brands fa-telegram"></i>
+      </a>
+
+      <!-- Zalo -->
+
+      <a
+        href="https://zalo.me/84901234567"
+        target="_blank"
+        class="chat-link zalo"
+      >
+        <i class="fa-solid fa-comment"></i>
+      </a>
+
+    </div>
+
+    <!-- Main Button -->
+
+    <button class="main-button" id="mainButton">
+
+      <i class="fa-solid fa-comments"></i>
+
+    </button>
+
+  </div>
+
+  <!-- =======================================================
+       SCRIPT
+  ======================================================== -->
+
+  <script>
+
+    /* =======================================================
+       FLOATING CHAT
+    ======================================================= */
+
+    const mainButton =
+      document.getElementById("mainButton");
+
+    const chatOptions =
+      document.getElementById("chatOptions");
+
+    mainButton.addEventListener("click", () => {
+
+      chatOptions.classList.toggle("show");
+
+    });
+
+    document.addEventListener("click", (event) => {
+
+      const isInside =
+        event.target.closest(".floating-chat");
+
+      if (!isInside) {
+
+        chatOptions.classList.remove("show");
+
+      }
+
+    });
+
+    /* =======================================================
+       FIXED A4 AUTO SCALE
+    ======================================================= */
+
+    function scaleA4Page() {
+
+      const page =
+        document.querySelector(".a4-page");
+
+      const wrapper =
+        document.querySelector(".page-wrapper");
+
+      const screenWidth =
+        window.innerWidth - 48;
+
+      const scale =
+        Math.min(screenWidth / 794, 1);
+
+      page.style.transform =
+        `scale(${scale})`;
+
+      const scaledHeight =
+        1123 * scale;
+
+      wrapper.style.height =
+        `${scaledHeight + 60}px`;
+    }
+
+    window.addEventListener(
+      "resize",
+      scaleA4Page
+    );
+
+    scaleA4Page();
+
+  </script>
+
+</body>
+
+</html>
