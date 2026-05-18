@@ -7,7 +7,7 @@
 
   <meta
     name="viewport"
-    content="width=1200"
+    content="width=1100"
   />
 
   <title>PSHH Laboratory, Sejong University</title>
@@ -84,7 +84,7 @@
 
     .a4-page {
 
-      width: 1200px;
+      width: 1100px;
       min-height: 1123px;
 
       background: white;
@@ -111,10 +111,10 @@
 
     .hero {
 
-      padding-top: 20px;
+      padding-top: 30px;
       padding-bottom: 20px;
 
-      background:#5f656d;
+      background:#526379;
 
       text-align: center;
     }
@@ -302,78 +302,17 @@
       background:#c8c8c8;
     }
 
-    /* =======================================================
-       FLOATING CHAT
-    ======================================================= */
+    /* TELEGRAM FLOATING BUTTON */
 
-    .floating-chat {
+    .telegram-floating {
 
       position: fixed;
 
       right: 24px;
       bottom: 24px;
 
-      z-index: 9999;
-    }
-
-    .main-button {
-
       width: 62px;
       height: 62px;
-
-      border: none;
-      border-radius: 50%;
-
-      cursor: pointer;
-
-      background: #111827;
-
-      color: white;
-
-      font-size: 24px;
-
-      box-shadow:
-        0 10px 25px rgba(0,0,0,0.18);
-
-      transition: 0.25s;
-    }
-
-    .main-button:hover {
-      transform: scale(1.06);
-    }
-
-    .chat-options {
-
-      position: absolute;
-
-      right: 0;
-      bottom: 76px;
-
-      display: flex;
-      flex-direction: column;
-
-      gap: 14px;
-
-      opacity: 0;
-      visibility: hidden;
-
-      transform: translateY(10px);
-
-      transition: 0.25s;
-    }
-
-    .chat-options.show {
-
-      opacity: 1;
-      visibility: visible;
-
-      transform: translateY(0);
-    }
-
-    .chat-link {
-
-      width: 56px;
-      height: 56px;
 
       display: flex;
       align-items: center;
@@ -381,38 +320,25 @@
 
       border-radius: 50%;
 
+      background: #229ED9;
+
       color: white;
 
       text-decoration: none;
 
+      font-size: 28px;
+
       box-shadow:
-        0 8px 20px rgba(0,0,0,0.15);
+        0 10px 25px rgba(0,0,0,0.18);
 
-      transition: 0.2s;
+      transition: 0.25s;
+
+      z-index: 9999;
     }
 
-    .chat-link:hover {
+    .telegram-floating:hover {
+
       transform: scale(1.08);
-    }
-
-    .chat-link i {
-      font-size: 22px;
-    }
-    
-    .kakao {
-      background: #FEE500;
-      color: #181600;
-    }
-    .whatsapp {
-      background: #25D366;
-    }
-
-    .telegram {
-      background: #229ED9;
-    }
-
-    .zalo {
-      background: #0068FF;
     }
 
   </style>
@@ -801,57 +727,13 @@
 
   <div class="floating-chat">
 
-    <div class="chat-options" id="chatOptions">
-
-    <!-- KakaoTalk -->
-
     <a
-      href="https://open.kakao.com/o/yourlink"
+      href="https://t.me/nhungocdao"
       target="_blank"
-      class="chat-link kakao"
+      class="telegram-floating"
     >
-      <i class="fa-solid fa-comment"></i>
+      <i class="fa-brands fa-telegram"></i>
     </a>
-
-      <!-- WhatsApp -->
-
-      <a
-        href="https://wa.me/84901234567"
-        target="_blank"
-        class="chat-link whatsapp"
-      >
-        <i class="fa-brands fa-whatsapp"></i>
-      </a>
-
-      <!-- Telegram -->
-
-      <a
-        href="https://t.me/your_username"
-        target="_blank"
-        class="chat-link telegram"
-      >
-        <i class="fa-brands fa-telegram"></i>
-      </a>
-
-      <!-- Zalo -->
-
-      <a
-        href="https://zalo.me/84901234567"
-        target="_blank"
-        class="chat-link zalo"
-      >
-        <i class="fa-solid fa-comment"></i>
-      </a>
-
-    </div>
-
-    <!-- Main Button -->
-
-    <button class="main-button" id="mainButton">
-
-      <i class="fa-solid fa-comments"></i>
-
-    </button>
 
   </div>
 
@@ -860,35 +742,6 @@
   ======================================================== -->
 
   <script>
-
-    /* =======================================================
-       FLOATING CHAT
-    ======================================================= */
-
-    const mainButton =
-      document.getElementById("mainButton");
-
-    const chatOptions =
-      document.getElementById("chatOptions");
-
-    mainButton.addEventListener("click", () => {
-
-      chatOptions.classList.toggle("show");
-
-    });
-
-    document.addEventListener("click", (event) => {
-
-      const isInside =
-        event.target.closest(".floating-chat");
-
-      if (!isInside) {
-
-        chatOptions.classList.remove("show");
-
-      }
-
-    });
 
     /* =======================================================
        FIXED A4 AUTO SCALE
