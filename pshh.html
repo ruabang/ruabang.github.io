@@ -10,7 +10,7 @@
     content="width=1100"
   />
 
-  <title>PSHH Laboratory, Sejong University</title>
+  <title>Nhu-Ngoc Dao</title>
 
   <!-- Google Font -->
 
@@ -126,7 +126,7 @@
 
       letter-spacing: -1.5px;
 
-      color: #ffffff;
+      color: #d1d1d1;
 
       margin-bottom: 5px;
 
@@ -211,7 +211,9 @@
 
       font-size: 16px;
 
-      padding-top: 4px;
+      line-height: 1.7;
+
+      padding-bottom: 2px;
     }
 
     .project-content p {
@@ -220,8 +222,78 @@
 
       line-height: 1.7;
 
-      color: #6b7280;
+      color: #374151;
     }
+
+    .keynote-item {
+
+      display: grid;
+
+      grid-template-columns: 1fr 175px;
+
+      gap: 5px;
+
+      padding: 0 0;
+
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    .achievement-item {
+
+      display: grid;
+
+      grid-template-columns: 1fr 120px;
+
+      gap: 5px;
+
+      padding: 0 0;
+
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    /* EXPERIENCE TABLE STYLE */
+
+    .experience-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0px;
+    }
+
+    .experience-item {
+
+      display: grid;
+
+      grid-template-columns: 155px 1fr;
+
+      gap: 5px;
+
+      padding: 0 0;
+
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    .experience-time {
+
+      font-style: italic;
+
+      color: #6b7280;
+
+      text-align: left;
+
+      font-size: 16px;
+
+      padding-top: 4px;
+    }
+
+    .experience-content p {
+
+      font-size: 16px;
+
+      line-height: 1.7;
+
+      color: #374151;
+    }
+
 
     /* STUDENT */
 
@@ -248,41 +320,6 @@
       font-size: 16px;
     }
 
-    /* Journal */
-
-    .journal-list {
-
-      display: flex;
-      flex-direction: column;
-
-      gap: 0px;
-
-      margin: 0;
-
-      text-align: justify;
-
-      padding-left: 30px;
-
-      list-style-position: outside;
-    }
-
-    /* Patent */
-
-    .patent-list {
-
-      display: flex;
-      flex-direction: column;
-
-      gap: 0px;
-
-      margin: 0;
-
-      text-align: justify;
-
-      padding-left: 20px;
-
-      list-style-position: outside;
-    }
 
     /* FOOTER */
 
@@ -361,11 +398,9 @@
 
         <div class="container">
 
-          <img src="logo.png" width="293" height="86">
+          <h1>Nhu-Ngoc Dao</h1>
 
-          <p style="font-size:16px"><br>Department of Computer Science and Engineering, Sejong University, Seoul
-            <!-- <br>[<a href="#research" style="color: #d1d1d1;">#intro</a>] [<a href="#members" style="color: #d1d1d1;">#members</a>] [<a href="#projects" style="color: #d1d1d1;">#projects</a>] [<a href="#chapter" style="color: #d1d1d1;">#publications</a>] -->
-          </p>
+          <p style="font-size:16px">Associate Professor<br>Department of Computer Science and Engineering, Sejong University, Seoul</p>
 
         </div>
 
@@ -378,67 +413,137 @@
         <div class="container">
 
           <h2 class="section-title">
-            Introduction <a href="#home" title="Home" style="font-size:20px;text-decoration: none;">&#9776;</a>
+            Biography
           </h2>
 
           <p class="about-text">
 
-            The Privacy-Sensitive Heterogeneous Hypercomputing (PSHH) Lab, directed by <a href="https://nndao.github.io">Dr. Nhu-Ngoc Dao</a>, is part of the Department of Computer Science and Engineering at Sejong University in Seoul. Our research explores fundamental challenges at the intersection of programmable networking, mobile computing, and wireless communications, with the goal of enabling intelligent, scalable, and privacy-aware networked systems for the 6G era and beyond. We warmly welcome students from both Korea and around the world who are interested in joining our research group. Please feel free to contact <a href="https://nndao.github.io">Ngoc</a> for further information.
+            Nhu-Ngoc Dao is an Associate Professor at the Department of Computer Science and Engineering, Sejong University, Seoul, South Korea. He received his M.S. and Ph.D. degrees in computer science at the School of Computer Science and Engineering, Chung-Ang University, Seoul, South Korea, in 2016 and 2019, respectively. He received the B.S. degree in electronics and telecommunications from the Posts and Telecommunications Institute of Technology, Hanoi, Viet Nam, in 2009. Prior to joining Sejong University, he was a Visiting Researcher with the University of Newcastle, Callaghan, NSW, Australia, in 2019 and a Postdoc Researcher with the Institute of Computer Science, University of Bern, Switzerland, from 2019 to 2020. He was a Visiting Professor at Chung-Ang University from 2023 to 2024. He received the <i>2025 Springer Nature Editorial Contribution Award</i>. He is currently an Editor of the <i>ICT Express</i>, <i>Scientific Reports</i>, and <i>PLOS ONE</i> journals. Dr. Dao is a Senior Member of IEEE and a Member of ACM. Contact him at nndao@sejong.ac.kr.
 
           </p>
+
+          <p class="about-text"><i>Research interests:</i> network softwarization, mobile cloudification, communication security, intelligent systems, and Internet of Things.</p>
 
         </div>
 
       </section>
 
-      <!-- member -->
+      <!-- experience -->
 
-      <section id="members">
+      <section>
 
         <div class="container">
 
           <h2 class="section-title">
-            Members <a href="#home" title="Home" style="font-size:20px;text-decoration: none;">&#9776;</a> <a href="#projects" title="Projects" style="font-size:20px;text-decoration: none;">&#9661;</a>
+            Experience
           </h2>
 
-          <ul style="list-style-type:square" class="student-list">
+          <div class="experience-list">
 
-            <li class="student-item">
-              Nhu-Ngoc Dao, Associate Professor, Director
-            </li>
-            <li class="student-item">
-              Anh Tuan Nguyen (Vietnam), PhD student since 09.2024
-            </li>
-            <li class="student-item">
-              Duc Quyen Mac (Vietnam), MS student since 03.2026
-            </li>
-            <li class="student-item">
-              Caleb Amanuel Wossen (USA), MS student since 09.2025
-            </li>
-            <li class="student-item">
-              Md Rakibul Islam (Bangladesh), MS student since 03.2025
-            </li>
-            <li class="student-item">
-              Minh Phuoc Nguyen (Vietnam), MS student since 09.2024 <font color="slategray" size="3"> <i> <br>- Thesis title: Automated AI-driven platform for comprehensive Kirby-Bauer antibiogram testing analysis <br>- Next place: TBU</i> </font>
-            </li>
-            <li class="student-item">
-              Samuel Harry Gardner (UK), BS student (03.2022 - 08.2024), MS student since 09.2024 <font color="slategray" size="3"> <i> <br>- Thesis title: Intelligent energy-efficient multipath routing for live streaming services over unmanned aerial mobility networks <br>- Next place: TBU</i> </font>
-            </li>
-            <li class="student-item">
-              Islam Md Mahrab (Bangladesh), MS student since 09.2024 <font color="slategray" size="3"> <i> <br>- Thesis title: Realtime trajectory similarity measurement in intelligent surveillance management systems <br>- Next place: TBU</i> </font>
-            </li>
-            <li class="student-item" style="list-style-type:disc">
-              Fayshal Ahmed (Bangladesh), MS student (03.2023 - 02.2025) <font color="slategray" size="3"> <i> <br>- Thesis title: On QoE optimization for live streaming services in multi-user uplink RSMA networks <br>- Next place: PhD student, Pukyong National University, South Korea</i> </font>
-            </li>
-            <li class="student-item" style="list-style-type:disc">
-              Teshager Hailemariam Moges (Ethiopia), MS student (09.2022 - 08.2024) <font color="slategray" size="3"> <i> <br>- Thesis title: Trajectory optimization for mission-critical UAV systems in SCMA networks <br>- Next place: Lecturer, Wollo University, Ethiopia</i> </font>
-            </li>
-            <li class="student-item" style="list-style-type:disc">
-              The-Vinh Nguyen (Vietnam), MS student (09.2021 - 08.2023) <font color="slategray" size="3"> <i> <br>- Thesis title: QoE optimisation of video streaming services in RSMA networks: A deep reinforcement learning approach <br>- Next place: R&D Engineer, LG Innotek, South Korea</i> </font>
-            </li>
+            <!-- Experience 1 -->
 
-          </ul>
+            <div class="experience-item">
+              <div class="experience-time">
+                03.2020 – Present
+              </div>
+              <div class="experience-content">
+                <p>
+                  Associate Professor, Department of Computer Science and Engineering, Sejong University, South Korea.
+                </p>
+              </div>
+            </div>
 
+            <!-- Experience 2 -->
+
+            <div class="experience-item">
+              <div class="experience-time">
+                03.2020 – Present
+              </div>
+              <div class="experience-content">
+                <p>
+                  Director, <a href="https://pshhlab.github.io">Privacy-Sensitive Heterogeneous Hypercomputing (PSHH) lab,</a> Sejong University, South Korea.
+                </p>
+              </div>
+            </div>
+
+            <!-- Experience 3 -->
+
+            <div class="experience-item">
+              <div class="experience-time">
+                09.2023 - 02.2024
+              </div>
+              <div class="experience-content">
+                <p>
+                  Visiting Professor, Department of Computer Science and Engineering, Chung-Ang University, South Korea.
+                </p>
+              </div>
+            </div>
+
+            <!-- Experience 4 -->
+
+            <div class="experience-item">
+              <div class="experience-time">
+                09.2019 - 02.2020
+              </div>
+              <div class="experience-content">
+                <p>
+                  Postdoc, Institute of Computer Science, University of Bern, Switzerland.<br>(Advisor: <a href="https://www.cds.unibe.ch/about_us/team/current/prof_dr_braun_torsten">Prof. Torsten Braun</a>)
+                </p>
+              </div>
+            </div>
+
+            <!-- Experience 5 -->
+
+            <div class="experience-item">
+              <div class="experience-time">
+                07.2019 - 08.2019
+              </div>
+              <div class="experience-content">
+                <p>
+                  Visiting Researcher, CDSC Center, University of Newcastle, Australia.
+                </p>
+              </div>
+            </div>
+ 
+          <!-- Experience 6 -->
+
+          <div class="experience-item">
+            <div class="experience-time">
+              03.2014 - 08.2019
+            </div>
+            <div class="experience-content">
+              <p>
+                MS/PhD student in Computer Science, Department of Computer Science and Engineering, Chung-Ang University, South Korea.<br>(Advisor: <a href="http://cau.ac.kr/~srcho">Prof. Sungrae Cho</a>)
+              </p>
+            </div>
+          </div>
+
+          <!-- Experience 7 -->
+
+          <div class="experience-item">
+            <div class="experience-time">
+              01.2009 - 02.2014
+            </div>
+            <div class="experience-content">
+              <p>
+                Engineer, Technology Department, Global Telecommunication Corporation (GTEL), Vietnam.
+              </p>
+            </div>
+          </div>
+
+          <!-- Experience 8 -->
+
+          <div class="experience-item">
+            <div class="experience-time">
+              09.2004 - 12.2008
+            </div>
+            <div class="experience-content">
+              <p>
+                BS student in Electronics &amp; Telecoms, Posts and Telecommunications Institute of Technology, Vietnam.
+              </p>
+            </div>
+          </div>
+        </div>
 
       </div>
 
@@ -446,12 +551,12 @@
 
       <!-- project -->
 
-      <section id="projects">
+      <section>
 
         <div class="container">
 
           <h2 class="section-title">
-            Projects <a href="#home" title="Home" style="font-size:20px;text-decoration: none;">&#9776;</a> <a href="#book" title="Books (Chapters)" style="font-size:20px;text-decoration: none;">&#9661;</a>
+            Projects
           </h2>
 
           <div class="project-list">
@@ -509,25 +614,49 @@
       </div>
 
       </section>
-  
-      <!-- book (chapter) -->
 
-      <section id="book">
+      <!-- member -->
+
+      <section>
 
         <div class="container">
 
           <h2 class="section-title">
-            Books (Chapters) <a href="#home" title="Home" style="font-size:20px;text-decoration: none;">&#9776;</a> <a href="#projects" title="Projects" style="font-size:20px;text-decoration: none;">&#9651;</a> <a href="#journals" title="Journal papers" style="font-size:20px;text-decoration: none;">&#9661;</a>
+            Supervision
           </h2>
 
-          <ol reversed style="list-style-type:square" class="student-list">
+          <ul style="list-style-type:square" class="student-list">
 
-            <li class="student-item"><b>Dao NN</b> et al. (Eds.), "Proceedings of the international conference on intelligence of things (ICIT)", Springer Cham, Switzerland, <a href="https://doi.org/10.1007/978-3-031-15063-0">2022</a>, 2023 (<a href="https://doi.org/10.1007/978-3-031-46573-4">vol. 1</a>, <a href="https://doi.org/10.1007/978-3-031-46749-3">vol. 2</a>), 2024 (<a href="https://doi.org/10.1007/978-3-031-75593-4">vol. 1</a>, <a href="https://doi.org/10.1007/978-3-031-75596-5">vol. 2</a>), and 2025 (<a href="https://doi.org/10.1007/978-3-032-13102-7">vol. 1</a>, <a href="https://doi.org/10.1007/978-3-032-13254-3">vol. 2</a>). [<a href="https://link.springer.com/conference/icit3">Springer</a>]</li>
-            <li class="student-item"><b>Dao NN</b> et al. (Eds.), "Proceedings of the international conference on explainable intelligence in digital twins (EIDT)", Springer Singapore, Singapore, <a href="https://doi.org/10.1007/978-981-95-6111-7">2025</a>. [<a href="https://doi.org/10.1007/978-981-95-6111-7">Springer</a>]</li>
-            <li class="student-item"><b>Dao NN</b> et al. (Eds.), "Proceedings of the international conference on intelligent aerial access and applications (IAAA)", Springer Cham, Switzerland, <a href="https://doi.org/10.1007/978-3-032-14935-0">2025</a>. [<a href="https://doi.org/10.1007/978-3-032-14935-0">Springer</a>]</li>
-            <li class="student-item"><b>Dao NN</b> et al. (Eds.), "Proceedings of the international conference on advances in artificial intelligence and machine learning in big data processing (AAIMB)", Springer Cham, Switzerland, 2023 (<a href="https://doi.org/10.1007/978-3-031-73065-8">vol. 1</a>, <a href="https://doi.org/10.1007/978-3-031-73068-9">vol. 2</a>), and 2024 (<a href="https://doi.org/10.1007/978-3-032-13026-6">vol. 1</a>, <a href="https://doi.org/10.1007/978-3-032-13029-7">vol. 2</a>). [<a href="https://link.springer.com/conference/aaimb">Springer</a>]</li>
-            <li class="student-item" style="list-style-type:disc"><b>Dao NN</b> et al., "Vulnerabilities in fog/edge computing from architectural perspectives", Chapter 8, in <i>Fog/edge computing for security, privacy, and applications</i>, Wu J and Chang W (Eds.), Springer Cham, Switzerland, 2021. [<a href="https://doi.org/10.1007/978-3-030-57328-7_8">Springer</a>]</li>
-            <li class="student-item" style="list-style-type:disc"><b>Dao NN</b> et al., "Edge computing architectures", Chapter 2, in <i>Edge computing: Models, technologies and applications</i>, Taheri J and Deng S (Eds.), The Institution of Engineering and Technology (IET), London, UK, 2020. [<a href="https://doi.org/10.1049/PBPC033E_ch2">IET</a>]</li>
+            <li class="student-item">
+              Anh Tuan Nguyen (Vietnam), PhD student since 09.2024
+            </li>
+            <li class="student-item">
+              Duc Quyen Mac (Vietnam), MS student since 03.2026
+            </li>
+            <li class="student-item">
+              Caleb Amanuel Wossen (USA), MS student since 09.2025
+            </li>
+            <li class="student-item">
+              Md Rakibul Islam (Bangladesh), MS student since 03.2025
+            </li>
+            <li class="student-item">
+              Minh Phuoc Nguyen (Vietnam), MS student since 09.2024
+            </li>
+            <li class="student-item">
+              Samuel Harry Gardner (UK), BS student (03.2022 - 08.2024), MS student since 09.2024
+            </li>
+            <li class="student-item">
+              Islam Md Mahrab (Bangladesh), MS student since 09.2024
+            </li>
+            <li class="student-item" style="list-style-type:disc">
+              Fayshal Ahmed (Bangladesh), MS student (03.2023 - 02.2025)
+            </li>
+            <li class="student-item" style="list-style-type:disc">
+              Teshager Hailemariam Moges (Ethiopia), MS student (09.2022 - 08.2024)
+            </li>
+            <li class="student-item" style="list-style-type:disc">
+              The-Vinh Nguyen (Vietnam), MS student (09.2021 - 08.2023)
+            </li>
 
           </ul>
 
@@ -536,185 +665,248 @@
 
       </section>
 
-      <!-- journal -->
+      <!-- keynote -->
 
-      <section id="journals">
-
-        <div class="container">
-
-          <h2 class="section-title">
-            Journal papers <a href="#home" title="Home" style="font-size:20px;text-decoration: none;">&#9776;</a> <a href="#book" title="Books (Chapters)" style="font-size:20px;text-decoration: none;">&#9651;</a> <a href="#conferences" title="Conference papers" style="font-size:20px;text-decoration: none;">&#9661;</a>
-          </h2>
-
-          <ol reversed style="list-style-type:decimal" class="journal-list">
-
-            <li class="student-item">Han D, <b>Dao NN</b>, Cho S, and Na W, "Semantic-aware multipath TCP: Enhancing industrial IoT flexible manufacturing networks with GAN-based packet recovery", <i>IEEE Transactions on Industrial Informatics</i>. In press. [<a href="https://doi.org/10.1109/TII.2026.3693342">IEEE</a>]</li>
-            <li class="student-item">Na W, Lee D, <b>Dao NN</b>, Hoang TM, and Cho S, "Beyond connectivity: Semantic communication unlocks the hyper-connected city with 6G", <i>IEEE Communications Magazine</i>. In press. [<a href="">IEEE</a>]</li>
-            <li class="student-item">Sa'ad U, Na W, <b>Dao NN</b>, and Cho S, "Adaptive risk analysis framework for network-level moving target defense under adversarial intelligence uncertainty", <i>Computers & Security</i>, vol. 166, p. 104890, 2026. [<a href="https://doi.org/10.1016/j.cose.2026.104890">Elsevier</a>]</li>
-            <li class="student-item">Truong TP, Tran NP, Oh J, Lee D, Tuong VD, <b>Dao NN</b>, and Cho S, "Energy efficiency in quantized MIMO-NOMA communication systems", <i>IEEE Transactions on Cognitive Communications and Networking</i>. vol. 12, pp. 6629-6642, 2026. [<a href="https://doi.org/10.1109/TCCN.2026.3670130">IEEE</a>]</li>
-            <li class="student-item">Sa'ad U, Na W, <b>Dao NN</b>, and Cho S, "Dynamic dependency-aware vulnerability and patch management for critical interconnected systems", <i>Journal of Network and Computer Applications</i>, vol. 248, p. 104436, 2026. [<a href="https://doi.org/10.1016/j.jnca.2026.104436">Elsevier</a>]</li>
-            <li class="student-item">Tran AT, Truong TP, Won D, <b>Dao NN</b>, and Cho S, "Weighted sum-rate maximization in rate-splitting MISO downlink systems", <i>IEEE Transactions on Network Science and Engineering</i>, vol. 13, pp. 5522-5538, 2026. [<a href="https://doi.org/10.1109/TNSE.2025.3645935">IEEE</a>]</li>
-            <li class="student-item">Sa'ad U, Lakew DS, <b>Dao NN</b>, and Cho S, "HERALD: Hybrid ensemble approach for robust anomaly detection in encrypted DNS traffic", <i>Journal of Network and Computer Applications</i>, vol. 244, p. 104342, 2025. [<a href="https://doi.org/10.1016/j.jnca.2025.104342">Elsevier</a>]</li>
-            <li class="student-item">Lee D, Jeon Y, Lee Y, <b>Dao NN</b>, Na W, and Cho S, "Energy and density-based stable election routing protocol for wireless IoT network", <i>Journal of Network and Computer Applications</i>, vol. 242, p. 104237, 2025. [<a href="https://doi.org/10.1016/j.jnca.2025.104237">Elsevier</a>]</li>
-            <li class="student-item"><b>Moges TH</b>, Truong TP, Lakew DS, Huong TH, Hoang VT, <b>Dao NN</b>, and Cho S, "Age of information-aware trajectory optimization for time-sensitive UAV systems in uplink SCMA networks", <i>Computer Networks</i>, vol. 268, p. 111369, 2025. [<a href="https://doi.org/10.1016/j.comnet.2025.111369">Elsevier</a>]</li>
-            <li class="student-item">Hoang TM, Pham TA, Nguyen VN, Doan DT, and <b>Dao NN</b>, "Leveraging edge intelligence for solar energy management in smart grids", <i>IEEE Access</i>, vol. 13, pp. 88093-88104, 2025. [<a href="https://doi.org/10.1109/ACCESS.2025.3570595">IEEE</a>]</li>
-            <li class="student-item"><b>Gardner SH</b>, Hoang TM, Na WS, <b>Dao NN</b>, and Cho S, "Metaverse meets distributed machine learning: A contemporary review on the development with privacy preserving concerns", <i>ICT Express</i>, vol. 11, no. 3, pp. 507-522, 2025. [<a href="https://doi.org/10.1016/j.icte.2025.04.008">Elsevier</a>]</li>
-            <li class="student-item"><b>Ahmed F</b>, <b>Nguyen TV</b>, Tran NP, <b>Dao NN</b>, and Cho S, "Joint content popularity and audience retention-aware live streaming over RSMA edge networks", <i>Computer Networks</i>, vol. 265, p. 111301, 2025. [<a href="https://doi.org/10.1016/j.comnet.2025.111301">Elsevier</a>]</li>
-            <li class="student-item">Truong TP, Nguyen TMT, Nguyen TV, <b>Dao NN</b>, and Cho S, "Energy efficiency in RSMA-enhanced active RIS-aided quantized downlink systems", <i>IEEE Journal on Selected Areas in Communications</i>, vol. 43, no. 3, pp. 834-850, 2025. [<a href="https://doi.org/10.1109/JSAC.2025.3531522">IEEE</a>]</li>
-            <li class="student-item">Truong TP, Nguyen HV, <b>Dao NN</b>, Noh W, and Cho S, "Orthogonalized RSMA based flexible multiple access in digital twin edge networks", <i>IEEE Transactions on Wireless Communications</i>, vol. 23, no. 12, pp. 18740-18756, 2024. [<a href="https://doi.org/10.1109/TWC.2024.3476383">IEEE</a>]</li>
-            <li class="student-item">Lakew DS, Tran AT, <b>Dao NN</b>, and Cho S, "Intelligent self-optimization for task offloading in LEO-MEC-assisted energy-harvesting-UAV systems", <i>IEEE Transactions on Network Science and Engineering</i>, vol. 11, no. 6, pp. 5135-5148, 2024. [<a href="https://doi.org/10.1109/TNSE.2023.3349321">IEEE</a>]</li>
-            <li class="student-item">Nguyen TH, Truong TP, Tran AT, <b>Dao NN</b>, Park L, and Cho S, "Intelligent heterogeneous aerial edge computing for advanced 5G access", <i>IEEE Transactions on Network Science and Engineering</i>, vol. 11, no. 4, pp. 3398-3411, 2024. [<a href="https://doi.org/10.1109/TNSE.2024.3371434">IEEE</a>]</li>
-            <li class="student-item"><b>Dao NN</b>, Na W, Cho S, and Dustdar S, "Toward privacy-sensitive heterogeneous hypercomputing", <i>IEEE Communications Magazine</i>, vol. 62, no. 4, pp. 24-30, 2024. [<a href="https://doi.org/10.1109/MCOM.001.2300145">IEEE</a>]</li>
-            <li class="student-item"><b>Dao NN</b>, Tu NH, Hoang TD, Nguyen TH, Nguyen LV, Lee K, Park L, Na W, and Cho S, "A review on new technologies in 3GPP standards for 5G access and beyond", <i>Computer Networks</i>, vol. 245, p. 110370, 2024. [<a href="https://doi.org/10.1016/j.comnet.2024.110370">Elsevier</a>]</li>
-            <li class="student-item">Kim N, Na W, Lakew DS, <b>Dao NN</b>, and Cho S, "DQN-based directional MAC protocol in wireless ad hoc network in Internet of things", <i>IEEE Internet of Things Journal</i>, vol. 11, no. 7, pp. 12918-12928, 2024. [<a href="https://doi.org/10.1109/JIOT.2023.3338562">IEEE</a>]</li>
-            <li class="student-item"><b>Nguyen TV</b>, Hua DT, Huong TH, Hoang VT, <b>Dao NN</b>, and Cho S, "Intelligent QoE management for IoMT streaming services in multi-user downlink RSMA networks", <i>IEEE Internet of Things Journal</i>, vol. 11, no. 7, pp. 12602-12618, 2024. [<a href="https://doi.org/10.1109/JIOT.2023.3334473">IEEE</a>]</li>
-            <li class="student-item">Tran NP, Truong TP, Do QT, <b>Dao NN</b>, and Cho S, "Joint wireless resource allocation and bitrate adaptation for QoE improvement in IRS-aided RSMA-enabled IoMT streaming systems", <i>Internet of Things</i>, vol. 25, p. 101145, 2024. [<a href="https://doi.org/10.1016/j.iot.2024.101145">Elsevier</a>]</li>
-            <li class="student-item">Masood A, <b>Dao NN</b>, and Cho S, "Privacy-preserving intelligent content-caching scheme in heterogeneous aerial access networks", <i>Expert Systems with Applications</i>, vol. 243, p. 122834, 2024. [<a href="https://doi.org/10.1016/j.eswa.2023.122834">Elsevier</a>]</li>
-            <li class="student-item">Samanta A, Pham QV, <b>Dao NN</b>, Muthanna A, and Cho S, "mISO: Incentivizing demand-agnostic microservices for edge-enabled IoT networks", <i>IEEE Transactions on Services Computing</i>, vol. 16, no. 5, pp. 3523-3536, 2023. [<a href="https://doi.org/10.1109/TSC.2023.3292362">IEEE</a>]</li>
-            <li class="student-item">Hua DT, Do QT, <b>Dao NN</b>, Nguyen TV, Lakew DS, and Cho S, "Learning-based reconfigurable intelligent surface-aided rate-splitting multiple access networks", <i>IEEE Internet of Things Journal</i>, vol. 10, no. 20, pp. 17603-17619, 2023. [<a href="https://doi.org/10.1109/JIOT.2023.3279196">IEEE</a>]</li>
-            <li class="student-item">Le AT, Do DT, <b>Dao NN</b>, Nguyen ND, and Silva A, "New look at secure performance of massive MIMO with low-resolution DACs", <i>ICT Express</i>, vol. 9, no. 4, pp. 608-613, 2023. [<a href="https://doi.org/10.1016/j.icte.2022.09.004">Elsevier</a>]</li>
-            <li class="student-item"><b>Moges TH</b>, Lakew DS, Nguyen NP, <b>Dao NN</b>, and Cho S, "Cellular Internet of things: Use cases, technologies, and future work", <i>Internet of Things</i>, vol. 24, p. 100910, 2023. [<a href="https://doi.org/10.1016/j.iot.2023.100910">Elsevier</a>]</li>
-            <li class="student-item">Masood A, Ha T, Lakew DS, <b>Dao NN</b>, and Cho S, "Intelligent TCP congestion control scheme in Internet of deep space things communication", <i>IEEE Transactions on Network Science and Engineering</i>, vol. 10, no. 3, pp. 1472-1486, 2023. [<a href="https://doi.org/10.1109/TNSE.2022.3212534">IEEE</a>]</li>
-            <li class="student-item">Lakew DS, Tran AT, <b>Dao NN</b>, and Cho S, "Intelligent offloading and resource allocation in heterogeneous aerial access IoT networks", <i>IEEE Internet of Things Journal</i>, vol. 10, no. 7, pp. 5704-5718, 2023. [<a href="https://doi.org/10.1109/JIOT.2022.3161571">IEEE</a>]</li>
-            <li class="student-item">Na W, Kim N, <b>Dao NN</b>, and Cho S, "Machine learning-based communication failure identification scheme for directional industrial IoT networks", <i>IEEE Systems Journal</i>, vol. 17, no. 1, pp. 1559-1568, 2023. [<a href="https://doi.org/10.1109/JSYST.2022.3192066">IEEE</a>]</li>
-            <li class="student-item">Truong TP, Tuong VD, <b>Dao NN</b>, and Cho S, "FlyReflect: Joint flying IRS trajectory and phase shift design using deep reinforcement learning", <i>IEEE Internet of Things Journal</i>, vol. 10, no. 5, pp. 4605-4620, 2023. [<a href="https://doi.org/10.1109/JIOT.2022.3218740">IEEE</a>]</li>
-            <li class="student-item"><b>Dao NN</b>, Tu NH, Thanh TT, Bao VNQ, Na W, and Cho S, "Neglected infrastructures for 6G–Underwater communications: How mature are they?", <i>Journal of Network and Computer Applications</i>, vol. 213, p. 103595, 2023. [<a href="https://doi.org/10.1016/j.jnca.2023.103595">Elsevier</a>]</li>
-            <li class="student-item"><b>Nguyen TV</b>, Nguyen NP, Kim C, and <b>Dao NN</b>, "Intelligent aerial video streaming: Achievements and challenges", <i>Journal of Network and Computer Applications</i>, vol. 211, p. 103564, 2023. [<a href="https://doi.org/10.1016/j.jnca.2022.103564">Elsevier</a>]</li>
-            <li class="student-item"><b>Nguyen TV</b>, Tran AT, <b>Dao NN</b>, Moon H, and Cho S, "Information fusion on delivery: A survey on the roles of mobile edge caching systems", <i>Information Fusion</i>, vol. 89, pp. 486-509, 2023. [<a href="https://doi.org/10.1016/j.inffus.2022.08.029">Elsevier</a>]</li>
-            <li class="student-item"><b>Dao NN</b>, "Internet of wearable things: Advancements and benefits from 6G technologies", <i>Future Generation Computer Systems</i>, vol. 138, pp. 172-184, 2023. [<a href="https://doi.org/10.1016/j.future.2022.07.006">Elsevier</a>]</li>
-            <li class="student-item"><b>Dao NN</b>, Tran AT, Tu NH, Thanh TT, Bao VNQ, and Cho S, "A contemporary survey on live video streaming from a computation-driven perspective", <i>ACM Computing Surveys</i>, vol. 54, no. 10s, p. 202, 2022. [<a href="https://doi.org/10.1145/3519552">ACM</a>]</li>
-            <li class="student-item"><b>Dao NN</b>, Do TH, Cho S, and Dustdar S, "Information revealed by vision: A review on the next-generation OCC standard for AIoV", <i>IT Professional</i>, vol. 24, no. 4, pp. 58-65, 2022. [<a href="https://doi.org/10.1109/MITP.2022.3180354">IEEE</a>]</li>
-            <li class="student-item">Lakew DS, Tuong VD, <b>Dao NN</b>, and Cho S, "Adaptive partial offloading and resource harmonization in wireless edge computing-assisted IoE networks", <i>IEEE Transactions on Network Science and Engineering</i>, vol. 9, no. 5, pp. 3028-3044, 2022. [<a href="https://doi.org/10.1109/TNSE.2022.3153172">IEEE</a>]</li>
-            <li class="student-item">Vu DN, <b>Dao NN</b>, Na W, and Cho S, "Dynamic resource orchestration for service capability maximization in fog-enabled connected vehicle networks", <i>IEEE Transactions on Cloud Computing</i>, vol. 10, no. 3, pp. 1726-1737, 2022. [<a href="https://doi.org/10.1109/TCC.2020.3001289">IEEE</a>]</li>
-            <li class="student-item">Lakew DS, Na W, <b>Dao NN</b>, and Cho S, "Aerial energy orchestration for heterogeneous UAV-assisted wireless communications", <i>IEEE Systems Journal</i>, vol. 16, no. 2, pp. 2483-2494, 2022. [<a href="https://doi.org/10.1109/JSYST.2021.3075316">IEEE</a>]</li>
-            <li class="student-item"><b>Dao NN</b>, Phan TV, Sa'ad U, Kim J, Bauschert T, Do DT, and Cho S, "Securing heterogeneous IoT with intelligent DDoS attack behavior learning", <i>IEEE Systems Journal</i>, vol. 16, no. 2, pp. 1974-1983, 2022. [<a href="https://doi.org/10.1109/JSYST.2021.3084199">IEEE</a>]</li>
-            <li class="student-item"><b>Dao NN</b>, Vu DN, Na WS, Hoang TM, Do DT, and Cho S, "Adaptive bitrate streaming in multi-user downlink NOMA edge caching systems with imperfect SIC", <i>Computer Networks</i>, vol. 212, p. 109064, 2022. [<a href="https://doi.org/10.1016/j.comnet.2022.109064">Elsevier</a>]</li>
-            <li class="student-item"><b>Dao NN</b>, Vu DN, Tran AT, Phan TV, Dustdar S, and Cho S, "On system stability in multitier roadside computing toward an intelligent transportation", <i>IEEE Transactions on Network Science and Engineering</i>, vol. 9, no. 3, pp. 1128-1138, 2022. [<a href="https://doi.org/10.1109/TNSE.2021.3133283">IEEE</a>]</li>
-            <li class="student-item">Truong TP, <b>Dao NN</b>, and Cho S, "HAMEC-RSMA: Enhanced aerial computing systems with rate splitting multiple access", <i>IEEE Access</i>, vol. 10, pp. 52398-52409, 2022. [<a href="https://doi.org/10.1109/ACCESS.2022.3173125">IEEE</a>]</li>
-            <li class="student-item">Na W, <b>Dao NN</b>, and Cho S, "Reinforcement-learning-based spatial resource identification for IoT D2D communications", <i>IEEE Systems Journal</i>, vol. 16, no. 1, pp. 1068-1079, 2022. [<a href="https://doi.org/10.1109/JSYST.2021.3087167">IEEE</a>]</li>
-            <li class="student-item">Nguyen TV, <b>Dao NN</b>, Tuong VD, Noh W, and Cho S, "User-aware and flexible proactive caching using LSTM and ensemble learning in IoT-MEC networks", <i>IEEE Internet of Things Journal</i>, vol. 9, no. 5, pp. 3251-3269, 2022. [<a href="https://doi.org/10.1109/JIOT.2021.3097768">IEEE</a>]</li>
-            <li class="student-item">Sahu SK, Mohapatra DP, Rout JK, Sahoo KS, Pham QV, and <b>Dao NN</b>, "A LSTM-FCNN based multi-class intrusion detection using scalable framework", <i>Computers and Electrical Engineering</i>, vol. 99, p. 107720, 2022. [<a href="https://doi.org/10.1016/j.compeleceng.2022.107720">Elsevier</a>]</li>
-            <li class="student-item">Do DT, Le AT, Xuan Ha ND, and <b>Dao NN</b>, "Physical layer security for Internet of things via reconfigurable intelligent surface", <i>Future Generation Computer Systems</i>, vol. 126, pp. 330-339, 2022. [<a href="https://doi.org/10.1016/j.future.2021.08.012">Elsevier</a>]</li>
-            <li class="student-item">Ramasubbareddy S, Ramasamy S, Sahoo KS, Kumar RL, Pham QV, and <b>Dao NN</b>, "CAVMS: Application-aware cloudlet adaption and VM selection framework for multi-cloudlet environment", <i>IEEE Systems Journal</i>, vol. 15, no. 4, pp. 5098-5106, 2021. [<a href="https://doi.org/10.1109/JSYST.2020.3029807">IEEE</a>]</li>
-            <li class="student-item"><b>Dao NN</b>, Ngo DT, Dinh NT, Phan TV, Vo ND, Cho S, and Braun T, "Hit ratio and content quality tradeoff for adaptive bitrate streaming in edge caching systems", <i>IEEE Systems Journal</i>, vol. 15, no. 4, pp. 5094-5097, 2021. [<a href="https://doi.org/10.1109/JSYST.2020.3019035">IEEE</a>]</li>
-            <li class="student-item">Tuong VD, <b>Dao NN</b>, Noh W, and Cho S, "Deep-reinforcement-learning-based hierarchical time-division-duplexing control for dense wireless and mobile networks", <i>IEEE Transactions on Wireless Communications</i>, vol. 20, no. 11, pp. 7135-7150, 2021. [<a href="https://doi.org/10.1109/TWC.2021.3080990">IEEE</a>]</li>
-            <li class="student-item"><b>Dao NN</b>, Pham QV, Tu NH, Thanh TT, Bao VNQ, Lakew DS, and Cho S, "Survey on aerial radio access networks: Toward a comprehensive 6G access infrastructure", <i>IEEE Communications Surveys and Tutorials</i>, vol. 23, no. 2, pp. 1193-1225, 2021. [<a href="https://doi.org/10.1109/COMST.2021.3059644">IEEE</a>]</li>
-            <li class="student-item"><b>Dao NN</b>, Pham QV, Do DT, and Dustdar S, "The sky is the edge - Toward mobile coverage from the sky", <i>IEEE Internet Computing</i>, vol. 25, no. 2, pp. 101-108, 2021. [<a href="https://doi.org/10.1109/MIC.2020.3033976">IEEE</a>]</li>
-            <li class="student-item"><b>Dao NN</b>, Na W, Tran AT, Nguyen DN, and Cho S, "Energy-efficient spectrum sensing for IoT devices", <i>IEEE Systems Journal</i>, vol. 15, no. 1, pp. 1077-1085, 2021. [<a href="https://doi.org/10.1109/JSYST.2020.2986030">IEEE</a>]</li>
-            <li class="student-item">Pham QD, <b>Dao NN</b>, Nguyen-Thanh T, Cho S, and Pham HC, "Detachable web-based learning framework to overcome immature ICT infrastructure toward smart education", <i>IEEE Access</i>, vol. 9, pp. 34951-34961, 2021. [<a href="https://doi.org/10.1109/ACCESS.2021.3062371">IEEE</a>]</li>
-            <li class="student-item">Lee C, Jang G, <b>Dao NN</b>, Lakew DS, Lee C, Cho S, "Competitive game theoretic clustering-based multiple UAV-assisted NB-IoT systems", <i>Electronics</i>, vol. 10, no. 3, p. 356, 2021. [<a href="https://doi.org/10.3390/electronics10030356">MDPI</a>]</li>
-            <li class="student-item">Nguyen CT, Pham QV, Pham HGT, <b>Dao NN</b>, and Hwang WJ, "Computation offloading in cognitive radio NOMA-enabled multi-access edge computing systems", <i>IET Communications</i>, vol. 14, no. 19, pp. 3404-3409, 2020. [<a href="https://doi.org/10.1049/iet-com.2020.0344">IET</a>]</li>
-            <li class="student-item">Phan TV, Nguyen TG, <b>Dao NN</b>, Huong TT, Thanh NH, and Bauschert T, "DeepGuard: Efficient anomaly detection in SDN with fine-grained traffic flow monitoring", <i>IEEE Transactions on Network and Service Management</i>, vol. 17, no. 3, pp. 1349-1362, 2020. [<a href="https://doi.org/10.1109/TNSM.2020.3004415">IEEE</a>]</li>
-            <li class="student-item">Lee Y, Jeong S, Masood A, Park L, <b>Dao NN</b>, and Cho S, "Trustful resource management for service allocation in fog-enabled intelligent transportation systems", <i>IEEE Access</i>, vol. 8, pp. 147313-147322, 2020. [<a href="https://doi.org/10.1109/ACCESS.2020.3015550">IEEE</a>]</li>
-            <li class="student-item">Tran AT, <b>Dao NN</b>, and Cho S, "Bitrate adaptation for video streaming services in edge caching systems", <i>IEEE Access</i>, vol. 8, pp. 135844-135852, 2020. [<a href="https://doi.org/10.1109/ACCESS.2020.3011517">IEEE</a>]</li>
-            <li class="student-item"><b>Dao NN</b>, Nguyen TT, Luong MQ, Nguyen-Thanh T, Na W, and Cho S, "Self-calibrated edge computation for unmodeled time-sensitive IoT offloading traffic", <i>IEEE Access</i>, vol. 8, pp. 110316-110323, 2020. [<a href="https://doi.org/10.1109/ACCESS.2020.3001572">IEEE</a>]</li>
-            <li class="student-item">Lakew DS, Sa'ad U, <b>Dao NN</b>, Na W, and Cho S, "Routing in flying ad hoc networks: A comprehensive survey", <i>IEEE Communications Surveys and Tutorials</i>, vol. 22, no. 2, pp. 1071-1120, 2020. [<a href="https://doi.org/10.1109/COMST.2020.2982452">IEEE</a>]</li>
-            <li class="student-item"><b>Dao NN</b>, Na W, and Cho S, "Mobile cloudization storytelling: Current issues from an optimization perspective", <i>IEEE Internet Computing</i>, vol. 24, no. 1, pp. 39-47, 2020. [<a href="https://doi.org/10.1109/MIC.2020.2965485">IEEE</a>]</li>
-            <li class="student-item">Na W, <b>Dao NN</b>, Kim J, Ryu ES, and Cho S, "Simulation and measurement: Feasibility study of tactile Internet applications for mmwave virtual reality", <i>ETRI Journal</i>, vol. 42, no. 2, pp. 163-174, 2020. [<a href="https://doi.org/10.4218/etrij.2019-0284">Wiley</a>]</li>
-            <li class="student-item"><b>Dao NN</b>, Vu DN, Masood A, Na W, and Cho S, "Reliable broadcasting for safety services in dense infrastructureless peer-aware communications", <i>Reliability Engineering and System Safety</i>, vol. 193, p. 106655, 2020. [<a href="https://doi.org/10.1016/j.ress.2019.106655">Elsevier</a>]</li>
-    <!--				<li class="student-item">Pham HC, <b>Dao NN</b>, Cho S, Nguyen PT, and Pham-Hang AT, "Construction hazard investigation leveraging object anatomization on augmented photoreality platform", <i>Applied Sciences</i>, vol. 9, no. 21, p. 4477, 2019. [<a href="https://doi.org/10.3390/app9214477">MDPI</a>]</li> -->
-            <li class="student-item"><b>Dao NN</b>, Na W, and Cho S, "IEEE 802.15.8: Infrastructureless peer-aware communications with fully distributed coordination", <i>IEEE Communications Standards Magazine</i>, vol. 3, no. 1, pp. 40-47, 2019. [<a href="https://doi.org/10.1109/MCOMSTD.2019.1800031">IEEE</a>]</li>
-            <li class="student-item">Na W, Jang S, Lee Y, Park L, <b>Dao NN</b>, and Cho S, "Frequency resource allocation and interference management in mobile edge computing for an Internet of things system", <i>IEEE Internet of Things Journal</i>, vol. 6, no. 3, pp. 4910-4920, 2019. [<a href="https://doi.org/10.1109/JIOT.2018.2885348">IEEE</a>]</li>
-            <li class="student-item"><b>Dao NN</b>, Park M, Kim J, Paek J, and Cho S, "Resource-aware relay selection for inter-cell interference avoidance in 5G heterogeneous network for Internet of things systems", <i>Future Generation Computer Systems</i>, vol. 93, pp. 877-887, 2019. [<a href="https://doi.org/10.1016/j.future.2018.03.037">Elsevier</a>]</li>
-            <li class="student-item">Vu DN, <b>Dao NN</b>, Jang Y, Na W, Kwon YB, Kang H, Jung JJ, and Cho S, "Joint energy and latency optimization for upstream IoT offloading services in fog radio access networks", <i>Transactions on Emerging Telecommunications Technologies</i>, vol. 30, no. 4, p. e3497, 2019. [<a href="https://doi.org/10.1002/ett.3497">Wiley</a>]</li>
-            <li class="student-item"><b>Dao NN</b>, Vu DN, Na W, Kim J, and Cho S, "SGCO: Stabilized green crosshaul orchestration for dense IoT offloading services", <i>IEEE Journal on Selected Areas in Communications</i>, vol. 36, no. 11, pp. 2538-2548, 2018. [<a href="https://doi.org/10.1109/JSAC.2018.2874124">IEEE</a>]</li>
-            <li class="student-item"><b>Dao NN</b>, Sa'ad U, Vu VC, Tran QD, Ryu ES, and Cho S, "A softwarized paradigm for mobile virtual networks: Overcoming a lack of access infrastructure", <i>IEEE Vehicular Technology Magazine</i>, vol. 13, no. 4, pp. 106-115, 2018. [<a href="https://doi.org/10.1109/MVT.2018.2866120">IEEE</a>]</li>
-            <li class="student-item">Na W, Lee Y, <b>Dao NN</b>, Vu DN, Masood A, and Cho S, "Directional link scheduling for real-time data processing in smart manufacturing system", <i>IEEE Internet of Things Journal</i>, vol. 5, no. 5, pp. 3661-3671, 2018. [<a href="https://doi.org/10.1109/JIOT.2018.2865756">IEEE</a>]</li>
-            <li class="student-item">Mai L, <b>Dao NN</b>, and Park M, "Real-time task assignment approach leveraging reinforcement learning with evolution strategies for long-term latency minimization in fog computing", <i>Sensors</i>, vol. 18, no. 9, p. 2830, 2018. [<a href="https://doi.org/10.3390/s18092830">MDPI</a>]</li>
-    <!--				<li class="student-item">Pham HC, <b>Dao NN</b>, Kim JU, Cho S, and Park CS, "Energy-efficient learning system using web-based panoramic virtual photoreality for interactive construction safety education", <i>Sustainability</i>, vol. 10, no. 7, p. 2262, 2018. [<a href="https://doi.org/10.3390/su10072262">MDPI</a>]</li>
-            <li class="student-item">Pham HC, <b>Dao NN</b>, Pedro A, Le QT, Hussain R, Cho S, and Park CS, "Virtual field trip for mobile construction safety education using 360-degree panoramic virtual reality", <i>International Journal of Engineering Education</i>, vol. 34, no. 4, pp. 1174-1191, 2018. [<a href="https://www.researchgate.net/publication/326096578_Virtual_Field_Trip_for_Mobile_Construction_Safety_Education_Using_360-Degree_Panoramic_Virtual_Reality">IJEE</a>]</li> -->
-            <li class="student-item"><b>Dao NN</b>, Vu DN, Lee Y, Cho S, Cho C, and Kim H, "Pattern-identified online task scheduling in multitier edge computing for industrial IoT services", <i>Mobile Information Systems</i>, vol. 2018, p. 2101206, 2018. [<a href="https://doi.org/10.1155/2018/2101206">Hindawi</a>]</li>
-            <li class="student-item"><b>Dao NN</b>, Kim Y, Jeong S, Park M, and Cho S, "Achievable multi-security levels for lightweight IoT-enabled devices in infrastructureless peer-aware communications", <i>IEEE Access</i>, vol. 5, pp. 26743-26753, 2017. [<a href="https://doi.org/10.1109/ACCESS.2017.2777443">IEEE</a>]</li>
-            <li class="student-item"><b>Dao NN</b>, Park M, Kim J, and Cho S, "Adaptive MCS selection and resource planning for energy-efficient communication in LTE-M based IoT sensing platform", <i>PLoS ONE</i>, vol. 12, no. 8, p. e0182527, 2017. [<a href="https://doi.org/10.1371/journal.pone.0182527">PLoS</a>]</li>
-            <li class="student-item"><b>Dao NN</b>, Lee J, Vu DN, Paek J, Kim J, Cho S, Chung KS, and Keum C, "Adaptive resource balancing for serviceability maximization in fog radio access networks", <i>IEEE Access</i>, vol. 5, pp. 14548-14559, 2017. [<a href="https://doi.org/10.1109/ACCESS.2017.2712138">IEEE</a>]</li>
-            <li class="student-item"><b>Dao NN</b>, Kim J, Park M, and Cho S, "Adaptive suspicious prevention for defending DoS attacks in SDN-based convergent networks", <i>PLoS ONE</i>, vol. 11, no. 8, p. e0160375, 2016. [<a href="https://doi.org/10.1371/journal.pone.0160375">PLoS</a>]</li>
-    <!--				<li class="student-item">Lee CG, <b>Dao NN</b>, Jang S, Kim D, Kim Y, and Cho S, "Gyro drift correction for an indirect Kalman filter based sensor fusion driver", <i>Sensors</i>, vol. 16, no. 6, p. 864, 2016. [<a href="https://doi.org/10.3390/s16060864">MDPI</a>]</li> -->
-            <li class="student-item">Na W, <b>Dao NN</b>, and Cho S, "Mitigating WiFi interference to improve throughput for in-vehicle infotainment networks", <i>IEEE Wireless Communications</i>, vol. 23, no. 1, pp. 22-28, 2016. [<a href="https://doi.org/10.1109/MWC.2016.7422402">IEEE</a>]</li>
-            <li class="student-item">Na W, <b>Dao NN</b>, and Cho S, "Reliable multicasting service for densely deployed military sensor networks", <i>International Journal of Distributed Sensor Networks</i>, vol. 11, no. 8, p. 341912, 2015. [<a href="https://doi.org/10.1155/2015/341912">Hindawi</a>]</li>
-
-          </ul>
-
-      </div>
-
-      </section>
-
-      <!-- conference -->
-
-      <section id="conferences">
+      <section>
 
         <div class="container">
 
           <h2 class="section-title">
-            Conference papers <a href="#home" title="Home" style="font-size:20px;text-decoration: none;">&#9776;</a> <a href="#journals" title="Journal papers" style="font-size:20px;text-decoration: none;">&#9651;</a> <a href="#patents" title="Patents" style="font-size:20px;text-decoration: none;">&#9661;</a>
+            Invited Talks/Keynotes
           </h2>
 
-          <ol reversed style="list-style-type:decimal" class="journal-list">
+          <div class="project-list">
 
-            <li class="student-item">Truong TP, Tran AT, Tuong VD, <b>Dao NN</b>, and Cho S, "NOMA-enhanced quantized uplink multi-user MIMO communications", <i>IEEE International Conference on Computer Communications (INFOCOM)</i>, pp. 281-290, Vancouver, Canada, May 20-23, 2024. [<a href="https://doi.org/10.1109/INFOCOM52122.2024.10621204">IEEE</a>]</li>
-            <li class="student-item">Truong TP, Nguyen TMT, Nguyen TV, <b>Dao NN</b>, and Cho S, "RSMA for uplink MIMO systems: DRL-based achievable system sum rate maximization", <i>IEEE Global Communications Conference (GLOBECOM) | Workshops on Artificial Intelligence Enabled Next Generation Wireless Networks (GLOBECOM Wkshps)</i>, pp. 878-883, Kuala Lumpur, Malaysia, December 4-8, 2023. [<a href="https://doi.org/10.1109/GCWkshps58843.2023.10464584">IEEE</a>]</li>
-            <li class="student-item">Nguyen TH, Truong TP, <b>Dao NN</b>, Na W, Park H, and Park L, "Deep reinforcement learning-based partial task offloading in high altitude platform-aided vehicular networks", <i>IEEE International Conference on Information and Communication Technology Convergence (ICTC)</i>, pp. 1341-1346, Jeju island, Korea, October 19-21, 2022. [<a href="https://doi.org/10.1109/ICTC55196.2022.9952890">IEEE</a>] (<b>Best Paper Award</b>)</li>
-<!--            <li class="student-item">Le KC, Do TH, Tran QD, Do DT, Le HA, and <b>Dao NN</b>, "An implementation of traffic volume forecasting system using distributed deep learning", <i>IEEE International Conference on Information and Communication Technology Convergence (ICTC)</i>, pp. 1065-1070, Jeju island, Korea, October 19-21, 2022. [<a href="https://doi.org/10.1109/ICTC55196.2022.9952968">IEEE</a>]</li> 
-            <li class="student-item">Tran NP, <b>Dao NN</b>, Nguyen TV, and Cho S, "Privacy-preserving learning models for communication: A tutorial on advanced split learning", <i>IEEE International Conference on Information and Communication Technology Convergence (ICTC)</i>, pp. 1059-1064, Jeju island, Korea, October 19-21, 2022. [<a href="https://doi.org/10.1109/ICTC55196.2022.9952628">IEEE</a>]</li> -->
-            <li class="student-item">Tran AT, Lakew DS, Tran NP, <b>Dao NN</b>, and Cho S, "Delay-constrained quality maximization in RSMA-based video streaming networks", <i>International Symposium on Theory, Algorithmic Foundations, and Protocol Design for Mobile Networks and Mobile Computing (MobiHoc)</i>, pp. 276-280, Seoul, Korea, October 17-20, 2022. [<a href="https://doi.org/10.1145/3492866.3558589">ACM</a>]</li>
-            <li class="student-item">Ha MQ, Phan VH, Nguyen BDQ, Nguyen HB, Do TH, Pham QD, and <b>Dao NN</b>, "Intelligent scene text recognition in streaming videos", <i>International Conference on Intelligence of Things (ICIT)</i>, pp. 356-365, Hanoi, Vietnam, August 17-19, 2022. [<a href="https://doi.org/10.1007/978-3-031-15063-0_34">Springer</a>]</li>
-	          <li class="student-item">Tuong VD, <b>Dao NN</b>, Noh W, and Cho S, "Dynamic time division duplexing for green Internet of things", <i>IEEE International Conference on Information Networking (ICOIN)</i>, pp. 356-368, Jeju island, Korea, January 12-15, 2022. [<a href="https://doi.org/10.1109/ICOIN53446.2022.9687184">IEEE</a>]</li>
- 	  		    <li class="student-item">Le BL, Lam GH, Nguyen XV, Nguyen TM, Duong QL, Tran QD, Do TH, and <b>Dao NN</b>, "A deep learning based traffic sign detection for intelligent transportation systems", <i>International Conference on Computational Data and Social Networks (CSoNet)</i>, pp. 129-137, Montreal, Canada, November 15-17, 2021. [<a href="https://doi.org/10.1007/978-3-030-91434-9_12">Springer</a>]</li>
-  				  <li class="student-item">Lakew DS, Tran AT, <b>Dao NN</b>, and Cho S, "Intelligent offloading and resource allocation in HAP-assisted MEC networks", <i>IEEE International Conference on Information and Communication Technology Convergence (ICTC)</i>, pp. 1582-1587, Jeju island, Korea, October 20-22, 2021. [<a href="https://doi.org/10.1109/ICTC52510.2021.9621158">IEEE</a>] (<b>Best Paper Award</b>)</li>
-	  		    <li class="student-item">Nguyen XV, Lam GH, Le QN, Duong QL, Nguyen TM, Le BL, Tran QD, Do TH, and <b>Dao NN</b>, "Intelligent augmented video streaming services using lightweight QR code scanner", <i>IEEE International Conference on Communication, Networks and Satellite (COMNETSAT)</i>, pp. 103-107, Purwokerto, Indonesia, July 17-18, 2021. [<a href="http://doi.org/10.1109/COMNETSAT53002.2021.9530819">IEEE</a>]</li>
-<!--	  		    <li class="student-item">Do TH, Tran DK, Hoang DQ, Vuong D, Hoang TM, <b>Dao NN</b>, Lee C, and Cho S, "A novel algorithm for estimating fast-moving vehicle speed in intelligent transport systems", <i>IEEE International Conference on Information Networking (ICOIN)</i>, pp. 499-503, Jeju island, Korea, January 13-16, 2021. [<a href="https://doi.org/10.1109/ICOIN50884.2021.9333970">IEEE</a>]</li>  -->
-	  		    <li class="student-item">Pham QD, Do TH, <b>Dao NN</b>, Na W, Lee C, and Cho S, "A feasible study of cube sensing organization map for cognitive spectrum allocation", <i>IEEE International Conference on Information Networking (ICOIN)</i>, pp. 858-863, Jeju island, Korea, January 13-16, 2021. [<a href="https://doi.org/10.1109/ICOIN50884.2021.9333998">IEEE</a>]</li>
-<!--	  		    <li class="student-item">Tran AT, Lakew DS, Nguyen TV, Tuong VD, Truong TP, <b>Dao NN</b>, and Cho S, "Hit ratio and latency optimization for caching systems: A survey", <i>IEEE International Conference on Information Networking (ICOIN)</i>, pp. 577-581, Jeju island, Korea, January 13-16, 2021. [<a href="https://doi.org/10.1109/ICOIN50884.2021.9334019">IEEE</a>]</li>
-	  		    <li class="student-item">Do TH, Tran DK, Hoang DQ, Pham MQ, Pham QD, <b>Dao NN</b>, Lee C, and Cho S, "Night-time vehicle distance estimation using camera geometry and deep learning", <i>IEEE International Conference on Information Networking (ICOIN)</i>, pp. 853-857, Jeju island, Korea, January 13-16, 2021. [<a href="https://doi.org/10.1109/ICOIN50884.2021.9333922">IEEE</a>]</li> -->
-  				  <li class="student-item">Tran AT, Nguyen TV, Tuong VD, <b>Dao NN</b>, and Cho S, "On stalling minimization of adaptive bitrate video services in edge caching systems", <i>IEEE International Conference on Information Networking (ICOIN)</i>, pp. 115-116, Barcelona, Spain, January 7-10, 2020. [<a href="https://doi.org/10.1109/ICOIN48656.2020.9016606">IEEE</a>]</li>
-  				  <li class="student-item">Dinh NT, <b>Dao NN</b>, and Kim Y, "Sensing content correlation-aware in-network caching scheme at the edge for Internet of Things", <i>ACM Conference on Information-Centric Networking (ICN)</i>, pp. 161-162, Macao, China, September 24-26, 2019. [<a href="https://doi.org/10.1145/3357150.3357413">ACM</a>]</li>
-<!--  				  <li class="student-item"><b>Dao NN</b>, Na W, Lee Y, Vu DN, and Cho S, "Prefetched asymmetric authentication for infrastructureless D2D communications: feasibility study and analysis", <i>IEEE International Conference on Information and Communication Technology Convergence (ICTC)</i>, pp. 1053-1054, Jeju island, Korea, October 17-19, 2018. [<a href="https://doi.org/10.1109/ICTC.2018.8539475">IEEE</a>]</li>
-  				  <li class="student-item">Jeong S, <b>Dao NN</b>, Lee Y, Lee C, and Cho S, "Blockchain based billing system for electric vehicle and charging station", <i>IEEE International Conference on Ubiquitous and Future Networks (ICUFN)</i>, pp. 308-310, Parague, Czech, July 3-6, 2018. [<a href="https://doi.org/10.1109/ICUFN.2018.8436987">IEEE</a>]</li> 
-  				  <li class="student-item"><b>Dao NN</b>, Vu DN, Lee Y, Park M, and Cho S, "MAEC-X: DDoS prevention leveraging multi-access edge computing", <i>IEEE International Conference on Information Networking (ICOIN)</i>, pp. 245-248, Chiang Mai, Thailand, January 10-12, 2018. [<a href="https://doi.org/10.1109/ICOIN.2018.8343118">IEEE</a>]</li> -->
-  				  <li class="student-item">Vu DN, <b>Dao NN</b>, and Cho S, "Downlink sum-rate optimization leveraging Hungarian method in fog radio access networks", <i>IEEE International Conference on Information Networking (ICOIN)</i>, pp. 56-60, Chiang Mai, Thailand, January 10-12, 2018. [<a href="https://doi.org/10.1109/ICOIN.2018.8343083">IEEE</a>]</li>
-<!--  				  <li class="student-item"><b>Dao NN</b>, Lee Y, Cho S, Kim U, Chung KS, and Keum C, "Multi-tier multi-access edge computing: The role for the fourth industrial revolution", <i>IEEE International Conference on Information and Communication Technology Convergence (ICTC)</i>, pp. 1280-1282, Jeju island, Korea, October 18-20, 2017. [<a href="https://doi.org/10.1109/ICTC.2017.8190921">IEEE</a>]</li>
-  				  <li class="student-item"><b>Dao NN</b>, Tran QD, Park M, and Cho S, "SDNbox: A portable open-source testbed for SDN study", <i>IEEE International Conference on Information and Communication Technology Convergence (ICTC)</i>, pp. 829-833, Jeju island, Korea, October 18-20, 2017. [<a href="https://doi.org/10.1109/ICTC.2017.8190793">IEEE</a>]</li>
-  				  <li class="student-item">Kim Y, <b>Dao NN</b>, Lee Y, and Cho S, "Trend analyses of authentication in peer aware communication (PAC)", <i>IEEE International Conference on Ubiquitous and Future Networks (ICUFN)</i>, pp. 1053-1055, Milan, Italy, July 4-7, 2017. [<a href="https://doi.org/10.1109/ICUFN.2017.7993961">IEEE</a>]</li>
-  				  <li class="student-item">Jang S, Park L, Na W, <b>Dao NN</b>, Eom JH, Kim YH, Lee JW, and Cho S, "Optimization of ISM band interference coordination between WLAN and IEEE 802.15.4 using NAV on PAN coordinator", <i>IEEE International Conference on Ubiquitous and Future Networks (ICUFN)</i>, pp. 688-690, Vienna, Austria, July 5-8, 2016. [<a href="https://doi.org/10.1109/ICUFN.2016.7537123">IEEE</a>]</li>
-  				  <li class="student-item">Eom J, Park L, Na W, <b>Dao NN</b>, Jang SM, Kim YH, Lee JW, and Cho S, "Using social Internet of things (SIoT) demand side management on the plant", <i>IEEE International Conference on Ubiquitous and Future Networks (ICUFN)</i>, pp. 685-687, Vienna, Austria, July 5-8, 2016. [<a href="https://doi.org/10.1109/ICUFN.2016.7537122">IEEE</a>]</li> -->
-  				  <li class="student-item"><b>Dao NN</b>, Park J, Park M, and Cho S, "A feasible method to combat against DDoS attack in SDN network", <i>IEEE International Conference on Information Networking (ICOIN)</i>, pp. 309-311, Siem Reap, Cambodia, January 12-14, 2015. [<a href="https://doi.org/10.1109/ICOIN.2015.7057902">IEEE</a>]</li>
+            <!-- keynote 1 -->
+            <div class="keynote-item">
+              <div class="project-content">
+                <p>
+                  Intelligent networking infrastructure for digital twins towards urban intelligence<br><i>National Institute for Digital Technologies and Digital Transformation</i>
+                </p>
+              </div>
+              <div class="project-time">
+                Nov. 18, 2025<br>Hanoi, Vietnam
+              </div>
+            </div>
 
-          </ul>
+            <!-- keynote 2 -->
+            <div class="keynote-item">
+              <div class="project-content">
+                <p>
+                  Artificial intelligence of things: State-of-the-art and applications<br><i>Kongju National University</i>
+                </p>
+              </div>
+              <div class="project-time">
+                Sep. 25, 2024<br>Cheonan, South Korea
+              </div>
+            </div>
+
+            <!-- keynote 3 -->
+            <div class="keynote-item">
+              <div class="project-content">
+                <p>
+                  Aerial communication and computing in drone swarms<br><i>UAS center, University of Southern Denmark</i>
+                </p>
+              </div>
+              <div class="project-time">
+                Aug. 09, 2024<br>Odense, Denmark
+              </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="keynote-item">
+              <div class="project-content">
+                <p>
+                  Multi-antenna transmission and beam management in mobile networks<br><i>Big Data Innovation Talent Training Center, Chung-Ang University</i>
+                </p>
+              </div>
+              <div class="project-time">
+                Feb. 03, 2023<br>Seoul, South Korea
+              </div>
+            </div>
+
+        </div>
 
       </div>
 
       </section>
-
-      <!-- patent -->
-
-      <section id="patents">
-
-        <div class="container">
-
-          <h2 class="section-title">
-            Patents <a href="#home" title="Home" style="font-size:20px;text-decoration: none;">&#9776;</a> <a href="#conferences" title="Conference papers" style="font-size:20px;text-decoration: none;">&#9651;</a>
-          </h2>
-
-          <ol reversed style="list-style-type:decimal" class="patent-list">
-
-      				<li class="student-item">Cho S, <b>Dao NN</b>, and Hong W, "Method for  controlling adaptive bitrate streaming", <i>Korean patent KR102854354</i>, August 29, 2025. [<a href="https://doi.org/10.8080/1020220170764">KIPRIS</a>]</li>
-      				<li class="student-item">Cho S, Vu DN, and <b>Dao NN</b>, "The method for scheduling tasks in real time using pattern-identification in multitier edge computing and the system thereof", <i>Korean patent KR102068676</i>, January 15, 2020. [<a href="https://doi.org/10.8080/1020180089619">KIPRIS</a>]</li>
-      				<li class="student-item">Cho S, Vu DN, and <b>Dao NN</b>, "Dynamic resource orchestration for fog-enabled industrial Internet of things networks", <i>Korean patent KR102056894</i>, December 17, 2019. [<a href="https://doi.org/10.8080/1020180088787">KIPRIS</a>]</li>
-      				<li class="student-item">Cho S and <b>Dao NN</b>, "Method and apparatus for sharing secret key", <i>Korean patent KR101987411</i>, June 11, 2019. [<a href="https://doi.org/10.8080/1020170080723">KIPRIS</a>]</li>
-      				<li class="student-item">Cho S, <b>Dao NN</b>, Park L, Lee J, Eom J, and Kim Y, "Network system for mobile virtual network operator based on software-defined networking and its operating method", <i>Korean patent KR101905665</i>, October 10, 2018. [<a href="https://doi.org/10.8080/1020160172376">KIPRIS</a>]</li>
-      				<li class="student-item">Cho S, <b>Dao NN</b>, Park L, Jang S, Eom J, and Kim Y, "Method and apparatus for adaptive parameter selection for sensor network", <i>Korean patent KR101871492</i>, June 28, 2018. [<a href="https://doi.org/10.8080/1020160177991">KIPRIS</a>]</li>
-      				<li class="student-item">Cho S, Na W, Bae H, Yu J, Kim T, Lee J, Lee Y, Vatandas Z, Yoon J, Park J, <b>Dao NN</b>, Baek J, Jang S, Kim G, and Kim D, "Digital signage and method for transmitting data to thereof", <i>Korean patent KR101628905</i>, June 10, 2016. [<a href="https://doi.org/10.8080/1020150021122">KIPRIS</a>]</li>
-
-          </ul>
-
-      </div>
-
-      </section>
-
       
+      <!-- achievement -->
+
+      <section>
+
+        <div class="container">
+
+          <h2 class="section-title">
+            Achievements
+          </h2>
+
+          <div class="project-list">
+
+            <!-- keynote 1 -->
+            <div class="achievement-item">
+              <div class="project-content">
+                <p>
+                  Editorial Contribution Award<br><i>Scientific Reports (Springer Nature)</i>
+                </p>
+              </div>
+              <div class="project-time">
+                2025
+              </div>
+            </div>
+
+            <!-- keynote 2 -->
+            <div class="achievement-item">
+              <div class="project-content">
+                <p>
+                  Best Paper Awards<br><i>IEEE International Conference on Information and Communication Technology Convergence (ICTC)</i>
+                </p>
+              </div>
+              <div class="project-time">
+                2021, 2022
+              </div>
+            </div>
+
+            <!-- keynote 3 -->
+            <div class="achievement-item">
+              <div class="project-content">
+                <p>
+                  CAU Alumni Award for Excellent PhD Dissertation<br><i>Chung-Ang University Graduate Students Union</i>
+                </p>
+              </div>
+              <div class="project-time">
+                2019
+              </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="achievement-item">
+              <div class="project-content">
+                <p>
+                  Certificate of Merits for Outstanding Academic and Research Achievements in Korea<br><i>The Ambassador of Vietnam in Korea</i>
+                </p>
+              </div>
+              <div class="project-time">
+                2019
+              </div>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="achievement-item">
+              <div class="project-content">
+                <p>
+                  Golden Globe Award in ICT<br><i>Ho Chi Minh Communist Youth Union and Ministry of Science and Technology Vietnam</i>
+                </p>
+              </div>
+              <div class="project-time">
+                2018
+              </div>
+            </div>
+
+        </div>
+
+      </div>
+
+      </section>
+      
+      <!-- service -->
+
+      <section>
+
+        <div class="container">
+
+          <h2 class="section-title">
+            Services
+          </h2>
+
+          <ul style="list-style-type:square" class="student-list">
+
+            <li class="student-item">
+              Founding chair of International Conference on Intelligence of Things (<a href="https://icitconf.org">ICIT</a>) since 2022.
+            </li>
+            <li class="student-item">
+              Founding chair of International Conference on Intelligent Aerial Access and Applications (<a href="https://cse.hcmut.edu.vn/iaaa2026/index.html">IAAA</a>) since 2025.
+            </li>
+            <li class="student-item">
+              Founding chair of International Conference on Explainable Intelligence in Digital Twins (<a href="https://eidt.ou.edu.vn">EIDT</a>) since 2025.
+            </li>
+            <li class="student-item">
+              Editor of ICT Express (since 2024), Scientific Reports (since 2022), and PLOS ONE (since 2022).
+            </li>
+            <li class="student-item">
+              Senior Member of IEEE, Member of ACM.
+            </li>
+
+          </ul>
+
+      </div>
+
+      </section>
+
+      <!-- profile -->
+
+      <section>
+
+        <div class="container">
+
+          <h2 class="section-title">
+            Academic profiles
+          </h2>
+
+          <ul style="list-style-type:square" class="student-list">
+
+            <li class="student-item">
+              Researcher ID: <a href="https://www.webofscience.com/wos/author/rid/D-7931-2018">D-7931-2018</a>
+            </li>
+            <li class="student-item">
+              Scopus ID: <a href="https://www.scopus.com/authid/detail.uri?authorId=56810883300">56810883300</a>
+            </li>
+            <li class="student-item">
+              Google Scholar ID: <a href="https://scholar.google.co.kr/citations?hl=en&user=rWmFrIgAAAAJ&view_op=list_works&sortby=pubdate">rWmFrIgAAAAJ</a>
+            </li>
+            <li class="student-item">
+              ORCID: <a href="https://orcid.org/0000-0003-1565-4376">0000-0003-1565-4376</a>
+            </li>
+
+          </ul>
+
+      </div>
+
+      </section>
+
+      <!-- social -->
+
+      <section>
+
+        <div class="container">
+
+          <h2 class="section-title">
+            Social activities
+          </h2>
+
+          <ul style="list-style-type:square" class="student-list">
+
+            <li class="student-item">
+              Running: <a href="https://en.seoul-marathon.com/">Seoul Marathon</a> 03/2019, <a href="https://brusselsairportmarathon.be/en/">Brussels Marathon</a> 10/2019, <a href="https://ljubljanskimaraton.si/en/">Ljubljana Marathon</a> 10/2019, <a href="https://www.marathon.tokyo/en/">Tokyo Marathon</a> 03/2026.
+            </li>
+            <li class="student-item">
+              Cycling: <a href="https://www.bike.go.kr/eng/index.do">Korean grand slam, cross country, and 4 rivers trails</a> 2018.
+            </li>
+            <li class="student-item">
+              Hiking: <a href="https://visithalla.jeju.go.kr/main/main.do">Jeju Hallasan Mt. trails</a> 2018.
+            </li>
+
+          </ul>
+
+      </div>
+
+      </section>
+      
+
       <!-- FOOTER -->
 
       <footer>
-        © 2026 PSHH Lab, Sejong University
+        © 2026 Nhu-Ngoc Dao
       </footer>
 
     </div>
